@@ -1,15 +1,28 @@
+### Notebook lm:
+https://notebooklm.google.com
+
 ### Předměty:
 
 Biologie
+
 Didaktická technika
+
 Didaktika odborných předmětů
+
 Didaktika všeobecně vzdělávacích předmětů
+
 Obecná a vývojová psychologie
+
 Obecná pedagogika
+
 Pedagogická psychologie
+
 Pedagogické programování - Chytrý
+
 Podklady o uznání praxe
+
 Sociální psychologie
+
 Školská legislativa
 
 ### Kontakty:
