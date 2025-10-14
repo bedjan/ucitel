@@ -7,3 +7,12 @@
 [Přihláška](https://www.pf.ujep.cz/cs/centrum-celozivotniho-vzdelavani-prihlaska)
 
 [Kontakty](https://www.pf.ujep.cz/cs/cat/centrum-celozivotniho-vzdelavani-kontakty)
+
+
+# Ing. Lenka Hřebejková
+
+    vedoucí CCV
+    -
+    Pracoviště: Centrum celoživotního vzdělávání
+    Telefon: +420 475 283 176
+    E-mail: lenka.hrebejkova@ujep.cz
