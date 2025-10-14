@@ -1,4 +1,4 @@
-[Email seznam](https://email.seznam.cz)
+[Email seznam -  spc.ul.2025@seznam.cz](https://email.seznam.cz)
 
 [Stag](https://stag.ujep.cz/)
 
