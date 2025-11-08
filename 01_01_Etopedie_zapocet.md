@@ -1,18 +1,25 @@
-# Etopedie 
+# Etopedie - PhDr. PaedDr. Ing. Jan Tirpák, Ph.D. et Ph.D., MBA
+
+https://www.pf.ujep.cz/cs/kontakt/jan-tirpak
 
 # Etopedie - hlavni zdroje: Pdf-kaleja-zaklady-etopedie.pdf
+
 https://drive.google.com/drive/folders/1zcs_Qw5KYFXNW9AatZ7PL8oQSifB-yHE?usp=drive_link
 
 # Psychopatologie-pro-pomáhající-profese-Vágnerová.PDF
+
 https://webshare.cz/#/search?what=Psychopatologie%20pro%20pom%C3%A1haj%C3%ADc%C3%AD%20profese
 
 # MKN-10 klasifikace
+
 https://mkn10.uzis.cz/prohlizec/F91
 
 # Uzamčený svět (2017) | ČSFD.cz
+
 https://www.csfd.cz/film/554170-uzamceny-svet/prehled/
 
 # Uzamčený svět - iVysílání | Česká televize
+
 https://www.ceskatelevize.cz/porady/11417814822-uzamceny-svet/
 
 # Dva muži ve městě (1973)
@@ -47,3 +54,7 @@ https://msmt.gov.cz/vzdelavani/socialni-programy/metodicke-dokumenty-doporuceni-
 # SVP Slaný
 
 http://svpslany.cz/index2.html
+
+# Zákon č. 359/1999 Sb. - paragraf 6 ( ochrana ) a vždy oznámit ( rodiče mrtvé, nechtějí, neumějí, nebo nezvládají )
+
+https://www.zakonyprolidi.cz/cs/1999-359
