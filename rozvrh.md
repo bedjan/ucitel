@@ -926,7 +926,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>so 24.01.2026</td>
+        <td>-- so 24.01.2026</td>
         <td>CN-MA</td>
         <td>Základy psychopedie I CCV/SPC05</td>
         <td></td>
