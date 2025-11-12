@@ -480,7 +480,7 @@
     <tr>
         <td>so 29.11.2025</td>
         <td>CN-MA</td>
-        <td>Sociální patologie CCV/SPC02</td>
+        <td><b>Sociální patologie CCV/SPC02</b></td>
         <td></td>
         <td></td>
         <td></td>
