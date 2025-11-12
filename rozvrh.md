@@ -534,7 +534,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>so 06.12.2025</td>
+        <td>-- so 06.12.2025</td>
         <td>CA-NA</td>
         <td>Psychologie jedinců s postižením CCV/SPC04</td>
         <td></td>
@@ -590,7 +590,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>so 13.12.2025</td>
+        <td>-- so 13.12.2025</td>
         <td>CN-MA</td>
         <td>Psychologie jedinců s postižením CCV/SPC04</td>
         <td></td>
