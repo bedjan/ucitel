@@ -338,7 +338,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 14.11.2025</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -450,7 +450,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 28.11.2025</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -506,7 +506,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 05.12.2025</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -562,7 +562,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 12.12.2025</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -618,7 +618,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 19.12.2025</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -646,7 +646,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>so 20.12.2025</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -786,7 +786,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 09.01.2026</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -842,7 +842,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 16.01.2026</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -954,7 +954,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 30.01.2026</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -1010,7 +1010,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 06.02.2026</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
@@ -1122,7 +1122,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>pá 20.2.2026</td>
+        <td></td>
         <td></td>
         <td></td>
         <td></td>
