@@ -982,7 +982,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>so 31.01.2026</td>
+        <td>-- so 31.01.2026</td>
         <td>CN-MA</td>
         <td>Podpora žáků s poruchou autistického spektra CCV/SPC03</td>
         <td></td>
@@ -1150,7 +1150,7 @@
         <td></td>
     </tr>
     <tr>
-        <td>so 21.2.2026</td>
+        <td>-- so 21.2.2026</td>
         <td>CN-MA</td>
         <td>Sociální patologie CCV/SPC02</td>
         <td></td>
