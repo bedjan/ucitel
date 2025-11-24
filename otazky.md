@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
 
         <p id="otazky_okruh1">
             <h1><strong>1. OTÁZKY KE ZKOUŠCE ZE SPECIÁLNÍ PEDAGOGIKY:</strong></h1>
@@ -933,5 +927,4 @@
             
         </div>
     </div>
-</body>
-</html>
+
