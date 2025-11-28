@@ -6,22 +6,24 @@
     <title>SPC UL 2025 – Kontakty a Otázky</title>
     <style>
         /* CSS STYLY PRO PŘEHLEDNÝ VZHLED */
+        /* Inspirováno stylem http://janbednar.atwebpages.com/ (tmavě modrá lišta, bílé pozadí obsahu, jednoduchá navigace) */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f4f4f4; /* Světle šedé pozadí */
             color: #333;
         }
 
         .header {
-            background-color: #004a99;
+            background-color: #004a99; /* Tmavě modrá lišta */
             color: white;
             padding: 15px 30px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Stín pod lištou */
         }
 
         .logo {
@@ -42,11 +44,13 @@
             text-decoration: none;
             font-weight: bold;
             padding: 5px 10px;
-            transition: color 0.3s;
+            transition: background-color 0.3s;
+            border-radius: 4px;
         }
 
         .main-nav a:hover {
-            color: #a8d0ff;
+            background-color: #00366b; /* Mírně tmavší modrá při najetí */
+            color: white;
         }
 
         /* HLAVNÍ KARTY OBSAHU */
@@ -58,6 +62,25 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
+        
+        /* Styl pro hlavní nadpisy sekcí (otázek) */
+        .content h1 {
+            color: #004a99; /* Modrá barva */
+            border-bottom: 2px solid #a8d0ff; /* Světlejší modrá linka pod nadpisem */
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        /* Odkazy v obsahu (seznam otázek) */
+        .content a {
+            color: #004a99; /* Modré odkazy */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
 
         .contact-info {
             margin-top: 20px;
@@ -65,6 +88,7 @@
             background-color: #e9e9e9;
             border-left: 5px solid #004a99;
             white-space: pre-wrap;
+            line-height: 1.5; /* Lepší čitelnost kontaktních údajů */
         }
         
         .email-link strong {
@@ -73,12 +97,32 @@
             margin-top: 5px;
             font-style: italic;
         }
+        
+        /* STYLY PRO ODPOVĚDI NA OTÁZKY */
+        .content hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+            margin: 30px 0;
+        }
+        
+        .content h2 {
+            color: #333;
+            font-size: 1.4em;
+            margin-top: 40px;
+        }
+        
+        /* Úprava seznamů pro lepší čitelnost */
+        .content ul, .content ol {
+            line-height: 1.6;
+        }
 
         /* STYLY PRO MOBILNÍ ZAŘÍZENÍ */
         @media (max-width: 768px) {
             .header {
                 flex-direction: column;
                 align-items: flex-start;
+                padding: 15px;
             }
 
             .main-nav {
@@ -102,12 +146,13 @@
             }
         }
         
-        /* Nový styl pro odkaz zpět na seznam otázek */
+        /* Styl pro odkaz zpět na seznam otázek */
         .back-to-top {
             display: block;
             margin-top: 10px;
             text-align: right;
             font-size: 0.9em;
+            color: #555 !important; /* Šedá barva pro menší důraz */
         }
     </style>
 </head>
@@ -245,7 +290,7 @@
                 <li>
                     <p>do 19. století – <strong>segregace (SE – oddělování)</strong>, ústavy, izolace, charitativní pojetí,</p>
                 </li>
-                <li><br>
+                <li>
                     <ol start="20">
                         <li>
                             <p>století – <strong>integrace (IG)</strong> – děti se začleňují, ale jen při splnění podmínek,</p>
@@ -331,7 +376,7 @@
             <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
             <hr>
             <h2 id="otazka1_6"><strong>6) Rozdíl mezi reedukac&iacute; a kompenzac&iacute;. Ucelen&aacute; rehabilitace.</strong></h2>
-            <p><ul>
+            <ul>
                 <li>
                     <p><strong>Reedukace (RE)</strong> = náprava narušené funkce (např. čten&iacute; u dyslexie).</p>
                 </li>
@@ -556,7 +601,7 @@
                     <p><strong>Kvantitativní</strong>: Stanovení IQ pomocí standardizovaných testů (např. Wechslerovy škály), určuje stupeň MR.</p>
                 </li>
                 <li>
-                    <p><strong>Kvalitativní (klinicko-psychologické)</strong>: Popisuje <strong>strukturu</strong> osobnosti, adaptivní chování, silné a slabé stránky jedince. Důležité pro tvorbu IVP.</p>
+                    <p><strong>Kvalitativní (klinicko-psychologické)</strong>: Popisuje **strukturu** osobnosti, adaptivní chování, silné a slabé stránky jedince. Důležité pro tvorbu IVP.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
@@ -613,411 +658,407 @@
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_3"><strong>3) Jaký je význam kvalitativního hodnocení rozumových schopností pro práci s lidmi s mentálním postižením?</strong></h2>
-            <p>Kvalitativní hodnocení (QHA) je pro práci s jedinci s MR klíčové, protože:</p>
+            <p>Zatímco **kvantitativní hodnocení (IQ)** nám řekne *stupeň* postižení, **kvalitativní hodnocení** je nezbytné pro *plánování a realizaci* speciálně pedagogické podpory.</p>
+            <p><strong>Hlavní význam:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Odhaluje funkční schopnosti</strong>: Zatímco IQ (kvantitativní hodnocení) ukazuje stupeň postižení, QHA se zaměřuje na to, co jedinec <strong>opravdu dokáže</strong>, bez ohledu na výsledky standardních testů (např. zda dokáže rozpoznat tváře, používat tablet, udržovat hygienu).</p>
+                    <p><strong>Tvorba IVP:</strong> Kvalitativní diagnostika (např. posouzení adaptivního chování, sebepéče, sociálních dovedností) je základem pro stanovení reálných cílů a metod v Individuálním vzdělávacím plánu (IVP).</p>
                 </li>
                 <li>
-                    <p><strong>Určuje potřeby podpory</strong>: Zjišťuje úroveň adaptivního chování (sociální, komunikační a praktické dovednosti), což je nezbytné pro stanovení míry podpory (AP – <em>asistent pedagoga</em>, potřeba stacionáře, pomoc v domácnosti).</p>
+                    <p><strong>Identifikace silných stránek:</strong> Odhaluje potenciál a rezervy v rozvoji (např. silnou vizuální paměť, motorické dovednosti), které lze využít k **vyrovnávání** nedostatků v kognitivní oblasti.</p>
                 </li>
                 <li>
-                    <p><strong>Pomáhá tvořit Individualizovaný Vzdělávací Plán (IVP)</strong>: Umožňuje přizpůsobit metody výuky a cíle přesně na míru schopností a zájmů jedince, nikoli pouze na základě číselného IQ.</p>
+                    <p><strong>Volba didaktických metod:</strong> Ukazuje, jak žák myslí (konkrétně, pomalu, s chybami v generalizaci) a jaký způsob výuky potřebuje (vizualizace, strukturalizace, repetice, názornost).</p>
                 </li>
                 <li>
-                    <p><strong>Identifikuje silné stránky a motivaci</strong>: Odhaluje oblasti, ve kterých jedinec vyniká (např. hudební cítění, motorické dovednosti, dobrá paměť) a které mohou sloužit jako základ pro učení a uplatnění v dospělosti.</p>
+                    <p><strong>Sociální a emoční potřeby:</strong> Hodnotí emoční vývoj, motivaci a sociální interakce, které jsou pro úspěšnou integraci klíčové.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_4"><strong>4) Charakterizujte možnosti edukace a následné společenské uplatnění jedinců s postižením na úrovni středně těžké mentální retardace.</strong></h2>
-            <p><strong>Střední mentální retardace (SMR)</strong> je charakterizována IQ v rozmezí 35–49. Tito jedinci jsou schopni osvojit si základní dovednosti, ale vyžadují značnou podporu po celý život.</p>
-            <p><strong>Edukace:</strong></p>
+            <p>Jedinci se **středně těžkou MR (IQ 35–49)** potřebují během celého života stálou podporu, ale jejich rozvoj je možný, pokud je výuka **silně strukturovaná** a **orientovaná na praktické dovednosti**.</p>
+            <p><strong>Možnosti edukace:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Základní vzdělávání</strong>: Probíhá obvykle v <strong>základní škole speciální</strong> (dříve zvláštní škola) nebo v individuální integraci se značnou podporou asistenta pedagoga a individuálním plánem (IVP).</p>
+                    <p>**Škola:** Speciální školy (ZŠ speciální, PŠ – Praktická škola), kde je výuka zaměřena na:
+                        <ul>
+                            <li>Funkční čtení, psaní a počítání (základní peněžní operace, rozpoznání dopravních značek, psaní jména).</li>
+                            <li>Nácvik **praktických dovedností** (hygiena, oblékání, vaření, používání veřejné dopravy).</li>
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Obsah výuky</strong>: Zaměřuje se na <strong>praktické dovednosti</strong> pro každodenní život – nácvik sebeobsluhy (hygiena, oblékání, stolování), sociální dovednosti, funkční čtení (rozpoznání piktogramů a krátkých nápisů) a základy počítání (peníze, čas).</p>
-                </li>
-                <li>
-                    <p><strong>Pokračující vzdělávání</strong>: Po dokončení základní školy speciální mohou pokračovat ve vzdělávání na <strong>praktické škole</strong> (jednoletá nebo dvouletá), která rozvíjí manuální a pracovní návyky (kuchyňské práce, zahradnictví).</p>
+                    <p>**Metody:** Dominantní je **názornost**, **repetice**, **analyticko-syntetická metoda** (rozklad složité činnosti na jednoduché kroky), a **strukturované učení** (jistota, opakování rituálů).</p>
                 </li>
             </ul>
             <p><strong>Společenské uplatnění:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Pracovní uplatnění</strong>: Často ve <strong>chráněných dílnách</strong> nebo s podporou v rámci <strong>podporovaného zaměstnávání</strong> (s asistentem). Jedná se o jednoduché, rutinní a manuální práce. Bez podpory je uplatnění obtížné.</p>
+                    <p><strong>Pracovní uplatnění:</strong> Většinou pouze v rámci **chráněných dílen** nebo chráněného trhu práce, kde vykonávají jednoduchou, stereotypní a manuální práci (montáž, balení, úklid) pod stálým dohledem.</p>
                 </li>
                 <li>
-                    <p><strong>Bydlení</strong>: Vyžadují dohled, ale mohou žít v <strong>podporovaném bydlení</strong> nebo s rodinou. Jsou schopni vykonávat jednoduché domácí práce s pravidelným dohledem.</p>
-                </li>
-                <li>
-                    <p><strong>Soběstačnost</strong>: Dokážou se naučit základní sebeobsluze, ale potřebují trvalou podporu při složitějších rozhodnutích, financích a v krizových situacích. Jsou <strong>částečně soběstační</strong>.</p>
+                    <p><strong>Bydlení a sociální život:</strong>
+                        <ul>
+                            <li>Většinou žijí v rodině nebo ve **chráněném/podporovaném bydlení** (domovy pro osoby se zdravotním postižením).</li>
+                            <li>Potřebují trvalou podporu v rozhodování, hospodaření s penězi a sociálních interakcích.</li>
+                        </ul>
+                    </p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_5"><strong>5) Charakterizujte typické znaky myšleni a řeči lidí s mentálním postižením. Jaké nápadnosti se objevují v jejich chování, jaká je jejich příčina ?</strong></h2>
-            <p><strong>Myšlení:</strong></p>
+            <p>Charakteristiky se liší dle stupně MR, ale obecně platí následující:</p>
+            <p><strong>Znaky myšlení (Kognice):</strong></p>
             <ul>
                 <li>
-                    <p><strong>Konkrétnost</strong>: Obtížné abstraktní myšlení, chápou věci doslova. Problémy s pojmy jako "svoboda", "čest", "budoucnost".</p>
+                    <p><strong>Konkrétnost myšlení:</strong> Neschopnost abstrakce, ulpívání na konkrétních faktech a předmětech. Je pro ně obtížné pochopit metafory, přísloví nebo abstraktní pojmy (čas, spravedlnost).</p>
                 </li>
                 <li>
-                    <p><strong>Pomalost a strnulost</strong>: Pomalé tempo myšlení, obtížné přepínání mezi úkoly (perseverace).</p>
+                    <p><strong>Pomalé tempo:</strong> Nižší rychlost zpracování informací a pomalejší učení. Vyžadují více času na pochopení úkolu.</p>
                 </li>
                 <li>
-                    <p><strong>Nižší úroveň generalizace</strong>: Neschopnost přenášet poznatky z jedné situace do druhé (naučí se zavázat tkaničku na jedné botě, ale na druhé to nedokážou).</p>
+                    <p><strong>Narušená generalizace:</strong> Obtížné přenášení naučených poznatků a dovedností do nových situací (co se naučí ve škole, neumí aplikovat doma).</p>
                 </li>
                 <li>
-                    <p><strong>Omezený rozsah paměti</strong>: Zejména logická, verbální a krátkodobá paměť bývá slabší.</p>
+                    <p><strong>Narušená paměť:</strong> Především snížená mechanická (krátkodobá) paměť, ale často dobrá paměť vizuální.</p>
                 </li>
             </ul>
-            <p><strong>Řeč:</strong></p>
+            <p><strong>Znaky řeči (Komunikace):</strong></p>
             <ul>
                 <li>
-                    <p><strong>Opožděný vývoj</strong>: Řeč se vyvíjí pomaleji a dosahuje nižší úrovně než u intaktních vrstevníků.</p>
+                    <p><strong>Omezená slovní zásoba:</strong> Složitá syntaxe a gramatika bývají narušené, řeč je často agramatická.</p>
                 </li>
                 <li>
-                    <p><strong>Slabá slovní zásoba</strong>: Často používají jednoduché, konkrétní výrazy.</p>
+                    <p><strong>Dyzartrie/Dyslalie:</strong> Časté poruchy výslovnosti a artikulace (u těžších forem).</p>
                 </li>
                 <li>
-                    <p><strong>Artikulační vady</strong>: Časté vady výslovnosti (dyslalie).</p>
-                </li>
-                <li>
-                    <p><strong>Echolalie</strong>: Opakování slyšených slov nebo frází bez pochopení (časté u těžších forem).</p>
+                    <p><strong>Echolalie:</strong> Opakování slyšených slov nebo frází bez pochopení obsahu (časté u Downova syndromu nebo PAS s MR).</p>
                 </li>
             </ul>
-            <p><strong>Nápadnosti v chování (a jejich příčina):</strong></p>
+            <p><strong>Nápadnosti v chování a jejich příčina:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Vyšší sugestibilita</strong> (lehká ovlivnitelnost): Z důvodu nižší schopnosti kritického myšlení a nezkušenosti s komplexními sociálními situacemi. Často jsou <strong>obětí</strong> zneužití.</p>
+                    <p><strong>Emoční labilita a neadekvátní reakce:</strong> Neschopnost přiměřeně kontrolovat emoce. **Příčina:** Nižší emoční inteligence a nedostatečná kontrola vyšších korových center.</p>
                 </li>
                 <li>
-                    <p><strong>Nižší frustrační tolerance</strong>: Neschopnost zvládat neúspěch nebo odklad uspokojení potřeby. Vede k výbuchům vzteku nebo apatii.</p>
+                    <p><strong>Sugestibilita a naivita:</strong> Snadné ovlivnění okolím, neschopnost kriticky zhodnotit riziko nebo úmysl druhých. **Příčina:** Nízká úroveň sociální inteligence a kritického myšlení.</p>
                 </li>
                 <li>
-                    <p><strong>Stereotypie/ritualizované chování</strong>: Opakování stejných pohybů nebo rituálů (např. houpání, točení), které slouží k <strong>sebestimulaci a snížení úzkosti</strong> ve stresovém prostředí. Příčina je neurologická, ale také jako reakce na deprivaci.</p>
+                    <p><strong>Stereotypní chování:</strong> Opakující se pohyby nebo rituály (zejména u těžší MR). **Příčina:** Sebestimulace a způsob, jak zvládat stres nebo nadměrné podněty v prostředí.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_6"><strong>6) Jaké jsou složky a formy výchovné práce, realizované v rámci ústavní péče, jaký je jejich cíl?</strong></h2>
-            <p>Výchovná práce v ústavní péči (např. Dětské domovy, Diagnostické ústavy, Domovy se zvláštním režimem) má za cíl <strong>integraci, socializaci, kompenzaci deprivace a přípravu na samostatný život</strong>.</p>
-            <p><strong>Hlavní složky (oblasti výchovy):</strong></p>
+            <p>Ústavní péče (v diagnostických ústavech, dětských domovech, výchovných ústavech) slouží primárně k **resocializaci** a **stabilizaci** jedinců s poruchami chování nebo s rodinnou deprivací. Cílem je **znovu začlenit** jedince do společnosti a zabránit recidivě. (Spadá spíše pod etopedii.)</p>
+            <p><strong>Složky výchovné práce:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Vzdělávací složka</strong>: Zajištění docházky, doučování, kompenzace zanedbání, pomoc s IVP. Cíl: <strong>Dohánění zameškaného učiva</strong>a dokončení vzdělání.</strong></p>
+                    <p><strong>Terapeutická složka:</strong> Zaměřena na **korekci narušených vztahů** a emocionálních problémů. Zahrnuje individuální a skupinovou psychoterapii, arteterapii, dramaterapii.</p>
                 </li>
                 <li>
-                    <p><strong>Pracovní a sebeobslužná složka</strong>: Nácvik každodenních praktických dovedností – úklid, vaření, praní, hospodaření s penězi. Cíl: <strong>Maximalizace soběstačnosti</strong> pro budoucí samostatný život.</p>
+                    <p><strong>Edukativní složka:</strong> Směřuje k **doplnění zanedbaného vzdělání** (často žáci s velkým počtem zameškaných hodin) a rozvoji školních dovedností.</p>
                 </li>
                 <li>
-                    <p><strong>Terapeutická a zdravotní složka</strong>: Zajištění psychologické, logopedické, etopedické nebo psychiatrické péče. Využití arteterapie, muzikoterapie. Cíl: <strong>Zpracování traumat</strong>, léčba poruch chování a psychických obtíží.</p>
+                    <p><strong>Pracovně-výchovná složka:</strong> Zaměřena na **získání pracovních návyků** a dovedností, přípravu na budoucí profesní uplatnění. Zahrnuje nácvik úklidu, péče o majetek, jednoduché manuální práce.</p>
                 </li>
                 <li>
-                    <p><strong>Sociální a emocionální složka</strong>: Nácvik sociálních dovedností, zvládání emocí, budování zdravých vztahů a přiměřeného trávení volného času. Cíl: <strong>Resocializace</strong> a prevence recidivy problémového chování.</p>
+                    <p><strong>Režimová složka:</strong> Zahrnuje **přísné dodržování pravidel** a denního režimu. Učí jedince struktuře, zodpovědnosti, respektování autorit a limitů. Je klíčová pro stabilizaci chování.</p>
                 </li>
             </ul>
             <p><strong>Formy výchovné práce:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Individuální práce</strong>: Terapie, rozhovory, individuální doučování, plánování budoucnosti.</p>
+                    <p><strong>Individuální práce:</strong> Systematický rozhovor, individuální výchovný plán, poradenství.</p>
                 </li>
                 <li>
-                    <p><strong>Skupinová práce</strong>: Skupinové terapie, komunitní kruhy, sportovní a volnočasové aktivity, kde se učí spolupráci.</p>
-                </li>
-                <li>
-                    <p><strong>Režimové a behaviorální přístupy</strong>: Jasná pravidla, denní režim, systém odměn a trestů, které pomáhají strukturovat prostředí a poskytují jistotu (často v etopedických zařízeních).</p>
+                    <p><strong>Skupinová práce:</strong> Terapeutické skupiny, volnočasové aktivity, komunitní schůze (řešení problémů v rámci skupiny).</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_7"><strong>7) Jaká jsou specifika práce s jedinci s Downovým syndromem. Možnosti výchovy a vzdělávání. Typické odlišnosti těchto osob ?</strong></h2>
-            <p><strong>Downův syndrom (DS)</strong> je genetická vada způsobená trizomií 21. chromozomu. Je to nejčastější chromozomální příčina mentální retardace (lehké až střední).</p>
-            <p><strong>Typické odlišnosti (Kombinace tělesných a psychických znaků):</strong></p>
+            <p>Downův syndrom (DS) je nejčastější vrozená chromozomální vada (trizomie 21), která vede k různým stupňům mentální retardace (nejčastěji lehká až střední).</p>
+            <p><strong>Typické odlišnosti (Klinické a psychické):</strong></p>
             <ul>
                 <li>
-                    <p><strong>Tělesné znaky</strong>: Šikmé oční štěrbiny, malé ústa, velký jazyk, kratší končetiny, snížený svalový tonus (hypotonie), zvýšené riziko srdečních vad a problémů se štítnou žlázou.</p>
+                    <p><strong>Vzhled:</strong> Typický obličej (šikmé oči, plochý nosní můstek), malá postava, krátký krk, velký jazyk (často trčící z úst).</p>
                 </li>
                 <li>
-                    <p><strong>Kognitivní a vývojové znaky</strong>: Opožděný psychomotorický vývoj a MR. Relativně silná <strong>vizuální paměť</strong> a sociální vřelost. Slabší bývá <strong>sluchová paměť</strong> a gramatické dovednosti.</p>
+                    <p><strong>Kognice:</strong> Myšlení je pomalé a konkrétní. Silná je **vizuální paměť** a sociální vnímavost, slabá je **sluchová paměť** a řečové dovednosti.</p>
                 </li>
                 <li>
-                    <p><strong>Osobnostní rysy</strong>: Často bývají <strong>emocionálně vřelí, společenští, s dobrou náladou</strong>, ale také tvrdohlaví, s potřebou rituálů a silnou fixací na známé prostředí.</p>
+                    <p><strong>Chování:</strong> Jsou obvykle **sociální, přátelští, a empatičtí**. Mohou projevovat tvrdohlavost, ale obecně mají rádi řád a rutinu.</p>
+                </li>
+                <li>
+                    <p><strong>Zdraví:</strong> Časté srdeční vady, problémy se zrakem a sluchem, snížená imunita.</p>
                 </li>
             </ul>
             <p><strong>Specifika práce a edukace:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Raná péče</strong>: Nutná včasná logopedická a fyzioterapeutická péče kvůli hypotonii a řečovým obtížím.</p>
+                    <p><strong>Využití vizuální podpory:</strong> Vzhledem k silné vizuální paměti se maximálně využívají piktogramy, obrázky, fotografie a znaky.</p>
                 </li>
                 <li>
-                    <p><strong>Využití vizuálních pomůcek</strong>: Vzhledem k silné vizuální paměti je ideální používat piktogramy, obrázky, fotografie a znaky <strong>makatonu</strong> pro podporu komunikace.</p>
+                    <p><strong>Raná stimulace:</strong> Logopedická péče je nutná kvůli svalové hypotonii ústní dutiny. Často je nutné se zaměřit na **alternativní komunikaci** (znaky, gesta).</p>
                 </li>
                 <li>
-                    <p><strong>Sociální učení</strong>: Snadno se učí nápodobou, je dobré je začleňovat do sociálních situací (kluby, kroužky) kvůli nácviku sociálních dovedností.</p>
+                    <p><strong>Nácvik sebepéče:</strong> Zaměřeno na maximální soběstačnost, nácvik hygieny, stravování, jednoduchých domácích prací (často s podporou asistenta pedagoga/osobního asistenta).</p>
                 </li>
                 <li>
-                    <p><strong>Pomalé tempo a opakování</strong>: Vyžadují trpělivost, důslednost, časté opakování a rozdělení úkolů na menší kroky.</p>
-                </li>
-                <li>
-                    <p><strong>Vzdělávání</strong>: Možná je integrace s AP na ZŠ, v mnoha případech probíhá v <strong>Základní škole speciální</strong> nebo na <strong>praktické škole</strong>. Cílem je samostatnost v sebeobsluze a možnost práce v chráněné dílně.</p>
+                    <p>**Vzdělávání:** Vzděláváni jsou buď v ZŠ speciální, nebo integrovaně s výraznou podporou (IVP, AP) a zaměřením na praktické dovednosti.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_8"><strong>8) Autismus a jeho formy (syndromy) etiologie, prevalence v populaci. Obecná charakteristika platná pro všechny jednotlivé syndromy. Jaké jsou principy práce se žáky s toto poruchou? Charakterizujte metodu strukturovaného přístupu</strong></h2>
-            <p><strong>Autismus (Poruchy autistického spektra – PAS):</strong> Jde o neurovývojovou poruchu, která se projevuje od raného dětství a přetrvává po celý život. Postihuje oblast komunikace, sociální interakce a flexibilitu myšlení.</p>
-            <p><strong>Formy (dříve syndromy) – Dnes se hovoří o PAS s různými úrovněmi podpory:</strong></p>
+            <p>Autismus (Porucha autistického spektra – PAS) je neurovývojová porucha, která ovlivňuje způsob, jakým jedinec zpracovává informace, komunikuje a navazuje sociální interakce.</p>
+            <p><strong>Formy (Syndromy):</strong> Dnes se používá termín **Spektrum**, ale historicky to byly: Dětský autismus, Aspergerův syndrom (mírnější forma, vyšší inteligence), Atypický autismus.</p>
+            <p><strong>Etiologie a Prevalence:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Dětský autismus</strong> (klasický autismus – závažnější symptomy, často spojen s MR a absencí řeči).</p>
+                    <p><strong>Etiologie:</strong> Převážně **neurobiologická** a **genetická**. Vliv prostředí je sekundární. Nejedná se o psychologický problém způsobený výchovou.</p>
                 </li>
                 <li>
-                    <p><strong>Aspergerův syndrom</strong> (dnes PAS bez mentálního postižení – zachovaná nebo nadprůměrná inteligence, dobrá řeč, ale velké problémy v sociální interakci a komunikaci).</p>
-                </li>
-                <li>
-                    <p><strong>Atypický autismus</strong> (nesplňuje všechny diagnostická kritéria pro klasický autismus).</p>
+                    <p><strong>Prevalence:</strong> Odhaduje se cca **1–2 %** populace, častější u chlapců (poměr cca 4:1).</p>
                 </li>
             </ul>
-            <p><strong>Etiologie a prevalence:</strong></p>
-            <ul>
-                <li>
-                    <p><strong>Etiologie</strong> (příčina): Předpokládá se kombinace genetických (vysoká dědičnost) a neurobiologických faktorů (odlišná struktura a funkce mozku). <strong>Nejnovější výzkumy vylučují</strong> vliv očkování nebo špatné výchovy.</p>
-                </li>
-                <li>
-                    <p><strong>Prevalence</strong>: Dle WHO je odhad 1 z 160 dětí (často se uvádí i 1 z 68). <strong>4x častější</strong> u chlapců.</p>
-                </li>
-            </ul>
-            <p><strong>Obecná charakteristika – „Triáda obtíží“ (dnes „Dyáda“ podle DSM-5):</strong></p>
+            <p><strong>Obecná charakteristika (Triáda/Diáda narušení):</strong></p>
+            <p>Narušení se dříve dělilo do tří oblastí (triáda), dnes se užívá **diáda narušení**:</p>
             <ol>
                 <li>
-                    <p><strong>Kvalitativní narušení sociální interakce</strong>: Obtíže v navazování a udržování vztahů, nezájem o sociální kontext, chybějící sdílení radosti.</p>
+                    <p><strong>Narušení sociální interakce a komunikace:</strong> Obtížné navazování vztahů, nezájem o sociální interakci, nepochopení řeči těla, obtíže s reciprocitou (střídání rolí) v rozhovoru.</p>
                 </li>
                 <li>
-                    <p><strong>Kvalitativní narušení komunikace</strong>: Opožděný nebo chybějící vývoj řeči, <strong>doslovné chápání řeči</strong>, obtíže v porozumění nonverbální komunikaci (mimika, gesta).</p>
-                </li>
-                <li>
-                    <p><strong>Omezené, opakující se a stereotypní vzorce chování, zájmy a aktivity</strong>: Fixace na neobvyklé zájmy (např. jízdní řády, vysavače), rituály, <strong>stereotypní pohyby</strong> (mávání rukama), silná <strong>neochota ke změnám</strong>.</p>
+                    <p><strong>Opakující se, stereotypní vzorce chování a zájmů:</strong> Neobvyklé, intenzivní a omezené zájmy (často úzké téma), lpění na rutině a rituálech, opakující se pohyby (mávání rukama, houpání).</p>
                 </li>
             </ol>
             <p><strong>Principy práce se žáky s PAS:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Struktura a předvídatelnost</strong>: Poskytovat pevný, neměnný denní režim a jasně vymezené prostory. Změny je nutné oznámit předem.</p>
+                    <p>**Bezpečnost a předvídatelnost:** Klíčové je strukturované a předvídatelné prostředí.</p>
                 </li>
                 <li>
-                    <p><strong>Vizualizace</strong>: Používání piktogramů a vizuálních rozvrhů (kdo, co, kdy) pro lepší pochopení sledu událostí a snížení úzkosti.</p>
+                    <p>**Vizuální podpora:** Používání piktogramů, vizuálních rozvrhů a sociálních příběhů.</p>
                 </li>
                 <li>
-                    <p><strong>Individuální přístup</strong>: Zohlednění hypersenzitivity/hyposenzitivity (zvýšená/snížená citlivost na podněty – např. hluk). Využití speciálních zájmů k motivaci.</p>
+                    <p>**Jednoznačnost:** Vyhýbat se ironii, dvojsmyslům a abstraktním pokynům. Přímá, doslovná komunikace.</p>
                 </li>
             </ul>
-            <p><strong>Metoda Strukturovaného Učení (TEACCH):</strong></p>
+            <p><strong>Metoda strukturovaného přístupu (TEACCH):</strong></p>
+            <p>Jde o nejrozšířenější komplexní metodu práce s lidmi s autismem. Cílem je uspořádat prostředí tak, aby bylo pro autistu **předvídatelné, srozumitelné a smysluplné**.</p>
             <ul>
                 <li>
-                    <p>Jde o komplexní přístup zaměřený na <strong>strukturu</strong>, která jedinci s PAS pomáhá orientovat se ve světě. Využívá silnou vizuální paměť a potřebu řádu.</p>
+                    <p>**Individualizace:** Přizpůsobení úkolů a prostředí individuálním potřebám.</p>
                 </li>
                 <li>
-                    <p><strong>Klíčové prvky</strong>: <strong>Fyzická struktura</strong> (jasné vymezení prostoru – jídelna, koutek pro práci), <strong>denní režim</strong> (vizuální rozvrh aktivit), <strong>systém práce</strong> (co má dělat, jak dlouho, co přijde po dokončení). Cílem je, aby jedinec věděl: <strong>co, kdy, kde, jak dlouho a co bude následovat</strong>.</p>
+                    <p>**Vizuální struktura:** Používání vizuálního denního režimu, pracovní schémata (co dělat, jak dlouho, co následuje).</p>
+                </li>
+                <li>
+                    <p>**Fyzická struktura:** Vymezení zón pro práci, odpočinek a jídlo.</p>
+                </li>
+                <li>
+                    <p>**Struktura úkolů:** Úkoly jsou jasně vizuálně ohraničené a mají jasný začátek, průběh a konec.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_9"><strong>9) Definujte poruchy chování a uveďte obecné znaky jejich nositelů.</strong></h2>
-            <p><strong>Definice Poruch chování (PCH):</strong> Jsou to takové formy chování, které <strong>dlouhodobě porušují společenské normy</strong> a pravidla (školní, rodinná, právní) a významně <strong>negativně zasahují do života</strong> jedince a jeho okolí. Nejedná se o jednorázový projev, ale o trvalý vzorec chování.</p>
+            <p><strong>Definice:</strong> Poruchy chování (PCH) jsou trvalé, opakované a hrubé narušení sociálních norem, které zahrnuje agresivní, asociální, kriminální nebo opoziční chování, které významně přesahuje běžné chování dětí a dospívajících.</p>
             <p><strong>Obecné znaky nositelů PCH:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Egoismus a egocentrismus</strong>: Zaměřenost na vlastní prospěch, neberou ohled na potřeby a práva druhých.</p>
+                    <p><strong>Narušené vztahy:</strong> Konflikty s autoritami (rodiče, učitelé) a vrstevníky. Neschopnost udržet stabilní, hluboké přátelství.</p>
                 </li>
                 <li>
-                    <p><strong>Nízká frustrační tolerance</strong>: Neschopnost zvládat neúspěch, kritiku nebo odklad uspokojení potřeby. Rychlé propuknutí agresivity nebo vzteku.</p>
+                    <p><strong>Nízká frustrační tolerance:</strong> Snadná excitabilita, tendence reagovat hněvem a agresí na drobnou zátěž.</p>
                 </li>
                 <li>
-                    <p><strong>Emoční labilita</strong>: Výrazné a rychlé střídání nálad, impulzivita (jednání bez uvážení následků).</p>
+                    <p><strong>Nedostatek výčitek:</strong> Narušený vývoj svědomí, absence pocitu viny po spáchaném přestupku či činu.</p>
                 </li>
                 <li>
-                    <p><strong>Nedostatečný pocit viny/výčitek svědomí</strong>: Chybí empatie a lítost nad činy, které někomu ublížily (zejména u závažnějších poruch).</p>
+                    <p><strong>Impulzivita:</strong> Sklon jednat bez rozmyšlení a bez ohledu na následky.</p>
                 </li>
                 <li>
-                    <p><strong>Verbální nebo fyzická agresivita</strong>: Šikana, napadání vrstevníků, ničení majetku, vzdorovitost vůči autoritám.</p>
+                    <p><strong>Asociální tendence:</strong> Zahrnuje lhaní, krádeže, útěky z domova, záškoláctví, vandalismus, šikanu.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_10"><strong>10) Jaké faktory mohou zvyšovat pravděpodobnost vzniku a rozvoje poruch chování</strong></h2>
-            <p>Příčiny PCH jsou multifaktoriální, tedy způsobené souhrou více faktorů:</p>
-            <p><strong>Biologické a psychologické faktory:</strong></p>
+            <p>PCH jsou téměř vždy výsledkem **multifaktoriální etiopatogeneze**, kde se prolínají biologické, psychologické a sociální vlivy.</p>
+            <p><strong>Faktory:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Genetická dispozice</strong>: Dědičnost temperamentu, impulzivity.</p>
+                    <p><strong>Biologické/Dispoziční:</strong>
+                        <ul>
+                            <li>Dědičnost, temperament (zvýšená dráždivost, neklid).</li>
+                            <li>Neurobiologické faktory (poškození prefrontální kůry, ADHD).</li>
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Poškození CNS</strong>: Perinatální komplikace, úrazy, které ovlivňují fungování čelního laloku (oblast pro kontrolu impulzů).</p>
+                    <p><strong>Psychologické:</strong>
+                        <ul>
+                            <li>Nízká frustrační tolerance, impulzivita (zejména u ADHD).</li>
+                            <li>Oslabení sebereflexe a sebehodnocení.</li>
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Poruchy psychického vývoje</strong>: ADHD (porucha pozornosti s hyperaktivitou), které je častým prekurzorem PCH.</p>
-                </li>
-            </ul>
-            <p><strong>Sociální a environmentální faktory (nejčastější):</strong></p>
-            <ul>
-                <li>
-                    <p><strong>Rodinné prostředí (nejdůležitější)</strong>: <strong>Narušené vztahy v rodině</strong> (rozvody, konflikty), <strong>nedůsledná výchova</strong> (střídání přísnosti a lhostejnosti), <strong>model asociálního chování</strong> u rodičů (alkoholismus, kriminalita).</p>
-                </li>
-                <li>
-                    <p><strong>Sociální znevýhodnění</strong>: Špatná ekonomická situace, nízký sociální status, život v sociálně patologickém prostředí.</p>
+                    <p><strong>Sociální/Rodinné (nejvýznamnější):</strong>
+                        <ul>
+                            <li>**Narušená rodinná struktura:** Neúplná rodina, rozvod, časté konflikty.</li>
+                            <li>**Výchovné chyby:** Nedůsledná, příliš autoritativní nebo naopak zanedbávající výchova.</li>
+                            <li>**Modelování chování:** Agresivní chování rodičů, alkoholismus, kriminální minulost rodinných příslušníků.</li>
+                            <li>**Nízký socioekonomický status (SES).**</li>
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Školní prostředí</strong>: <strong>Špatné vztahy s učiteli</strong>, neúspěch ve škole (který vede k záškoláctví a poruchám), <strong>šikana</strong> (oběť šikany se může stát agresorem).</p>
-                </li>
-                <li>
-                    <p><strong>Vliv vrstevníků</strong>: Přidání se k negativně orientovaným skupinám, které podporují rizikové chování.</p>
+                    <p><strong>Školní:</strong> Neúspěchy ve škole, častá změna školy, šikana, konflikty s učiteli, nezvládnutá integrace.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_11"><strong>11) Jak lze třídit poruchy chování z hlediska závažnosti pro společnost? Charakterizujte analogické znaky jednotlivých kategorií.</strong></h2>
-            <p>Poruchy chování se v etopedii dělí podle závažnosti porušení společenských norem a pravidel, přičemž každá kategorie má své analogické (podobné) znaky:</p>
+            <p>Nejčastější je dělení na základě **závažnosti narušení sociálních norem** a **prostředí**, ve kterém se projevuje:</p>
             <ol>
                 <li>
-                    <p><strong>Disociální chování (Nejmenší závažnost)</strong></p>
-                    <ul>
-                        <li>
-                            <p><strong>Znaky</strong>: Nepřiměřený vzdor, neposlušnost, lhaní, mírné záškoláctví, vulgární mluva. V podstatě jde o <strong>porušení morálních a výchovných norem</strong> bez přímého poškození druhé osoby.</p>
-                        </li>
-                        <li>
-                            <p><strong>Analogické znaky</strong>: Jde o <strong>reakci na chybnou výchovu</strong> nebo na krizi dospívání. Problém je primárně v rodině nebo ve škole.</p>
-                        </li>
-                    </ul>
+                    <p><strong>Problémové chování (Mírné PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Přechodné, situačně podmíněné problémy. Není trvalé.
+                            <li>**Příklady:** Přechodné vzdorovité chování v pubertě, občasné lhaní, náladovost.
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Asociální chování (Střední závažnost)</strong></p>
-                    <ul>
-                        <li>
-                            <p><strong>Znaky</strong>: Agresivita, šikana, toulání, závažné a opakované záškoláctví, <strong>experimentování s drogami</strong>, krádeže menšího rozsahu, útěky z domova. Porušuje se <strong>morální a právní norma</strong> (přestupky).</p>
-                        </li>
-                        <li>
-                            <p><strong>Analogické znaky</strong>: <strong>Neuznávání autorit</strong> a ignorování společenských pravidel. Jedinec je ohrožen rizikem pro sebe a pro své okolí (např. v partě).</p>
-                        </li>
-                    </ul>
+                    <p><strong>Disociální chování (Středně závažné PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Porušování norem bez výrazného poškozování ostatních. Chování je zaměřeno spíše proti **sobě** nebo **pravidlům**.
+                            <li>**Příklady:** Záškoláctví, útěky z domova, toulání, neadekvátní sexuální chování, sebepoškozování, užívání látek.
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Antisociální chování (Nejzávažnější – sociální deviace)</strong></p>
-                    <ul>
-                        <li>
-                            <p><strong>Znaky</strong>: <strong>Trestné činy</strong> (loupeže, násilí, sexuální delikty, závažné poškozování majetku, závažná toxikomanie). Jedinec opakovaně a vědomě porušuje <strong>právní normy</strong> a je v rozporu se zákonem.</p>
-                        </li>
-                        <li>
-                            <p><strong>Analogické znaky</strong>: Závažné a trvalé <strong>poškození druhých osob</strong>, často spojené s nedostatkem empatie a svědomí (psychopatie/sociopatie). V řešení jsou <strong>Diagnostické ústavy</strong> a vězení pro mladistvé.</p>
-                        </li>
-                    </ul>
+                    <p><strong>Asociální chování (Závažné PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Aktivní a trvalé porušování norem, chování zaměřené **proti společnosti, majetku nebo osobám**.
+                            <li>**Příklady:** Fyzická a verbální agrese, šikana, vandalismus, krádeže, ničení majetku, týrání zvířat.
+                        </ul>
+                    </p>
                 </li>
+                <li>
+                    <p><strong>Asoociální chování (Nejzávažnější PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Jedinec je izolovaný, žije ve vlastním světě a je lhostejný vůči sociálním normám. Nejedná se nutně o agresi, ale o **sociální nepřizpůsobivost**.
+                            <li>**Příklady:** Extrémní psychická deprivace, závažné formy autismu (pokud není chování adekvátně kompenzováno).</p>
+                        </ul>
+                    </li>
             </ol>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_12"><strong>12) Definujte syndrom závislosti, popište její symptomy. Jaký je rozdíl mezi škodlivým užíváním a závislostí?</strong></h2>
-            <p><strong>Syndrom závislosti:</strong> Je to skupina fyziologických, behaviorálních a kognitivních fenoménů, kdy užívání psychoaktivní látky nebo určité aktivity (hazard, internet) nabývá u jedince <strong>vyšší priority</strong> než jiné formy chování, které měly dříve vyšší hodnotu.</p>
-            <p><strong>Klíčové symptomy závislosti (doporučené WHO/DSM-5 – pro stanovení diagnózy je nutná přítomnost alespoň 3 z následujících po dobu 1 měsíce):</strong></p>
+            <p><strong>Syndrom závislosti (Definice):</strong> Jde o skupinu fyziologických, behaviorálních a kognitivních jevů, u nichž užívání psychoaktivní látky (nebo třídy látek) či určité aktivity (hazard, internet) nabývá pro jedince **vyšší priority** než jiné chování, které mělo dříve vyšší hodnotu.</p>
+            <p><strong>Klíčové symptomy (dle MKN-10/DSM):</strong></p>
             <ul>
                 <li>
-                    <p><strong>Silná touha nebo nutkání</strong> (craving) látku/aktivitu užít.</p>
+                    <p>**Silná touha (craving):** Přetrvávající nutkání látku užívat.</p>
                 </li>
                 <li>
-                    <p><strong>Potíže v kontrole</strong>: Neschopnost kontrolovat množství, čas nebo ukončení užívání.</p>
+                    <p>**Ztráta kontroly:** Neschopnost kontrolovat množství užívané látky nebo délku užívání.</p>
                 </li>
                 <li>
-                    <p><strong>Odvykací stav</strong>: Tělesné a/nebo psychické potíže, které nastanou po přerušení nebo snížení dávky (např. třes, úzkost, nevolnost).</p>
+                    <p>**Zvyšování tolerance:** Pro dosažení stejného účinku je potřeba vyšší dávka látky.</p>
                 </li>
                 <li>
-                    <p><strong>Tolerance</strong>: Potřeba <strong>zvyšovat dávku</strong> k dosažení původního účinku.</p>
+                    <p>**Odvykací stav:** Vyskytuje se po vysazení látky (fyzické nebo psychické nepříjemné stavy).</p>
                 </li>
                 <li>
-                    <p><strong>Zanedbávání zájmů</strong>: Kvůli užívání zanedbává dřívější záliby, práci, rodinu.</p>
+                    <p>**Zanedbávání zájmů:** Postupné opouštění jiných zájmů a aktivit ve prospěch užívání.</p>
                 </li>
                 <li>
-                    <p><strong>Pokračování v užívání i přes poškození</strong>: Vědomí, že látka působí zdravotní nebo sociální problémy, ale přesto pokračuje v užívání.</p>
+                    <p>**Pokračující užívání přes jasné škodlivé následky.**</p>
                 </li>
             </ul>
-            <p><strong>Rozdíl mezi škodlivým užíváním a závislostí:</strong></p>
+            <p><strong>Rozdíl mezi Škodlivým užíváním a Závislostí:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Škodlivé užívání (harmful use)</strong>: Znamená, že užívání látky již <strong>způsobuje fyzické nebo psychické poškození</strong> (např. problémy s játry, deprese), ale <strong>ještě se nerozvinuly příznaky tolerance a odvykacího stavu</strong> (tedy plný syndrom závislosti).</p>
+                    <p><strong>Škodlivé užívání:</strong> Užívání látky, které již prokazatelně poškozuje zdraví (fyzické nebo psychické), ale jedinec **ještě nevykazuje syndrom závislosti** (nemá ztrátu kontroly, toleranci ani odvykací stav).</p>
                 </li>
                 <li>
-                    <p><strong>Závislost</strong>: Zahrnuje jak poškození, tak především rozvoj <strong>fyzické a/nebo psychické závislosti</strong>, kde dominují symptomy jako <strong>craving, tolerance a odvykací stav</strong>.</p>
+                    <p><strong>Závislost:</strong> Jedinec splňuje alespoň **3 ze 6** uvedených symptomů (viz výše). Užívání se stává **centrem života** a je nutkavé.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_13"><strong>13) Jaké psychologické a sociální faktory mohou zvyšovat pravděpodobnost rozvoje závislosti?</strong></h2>
-            <p>Stejně jako u poruch chování, i u závislosti se uplatňuje mnoho faktorů:</p>
-            <p><strong>Psychologické faktory:</strong></p>
+            <p>Stejně jako PCH, i závislost je multi-příčinná. Existuje souhra faktorů rizika (zvyšují pravděpodobnost) a faktorů protektivních (snižují pravděpodobnost).</p>
+            <p><strong>Psychologické faktory (Vnitřní):</strong></p>
             <ul>
                 <li>
-                    <p><strong>Osobnostní rysy</strong>: Impulzivita, neschopnost snášet nudu, <strong>vyhledávání silných zážitků</strong> (senzitivní craving).</p>
+                    <p>**Nízké sebevědomí a frustrace:** Užívání látky slouží jako únik nebo způsob, jak kompenzovat pocity méněcennosti.</p>
                 </li>
                 <li>
-                    <p><strong>Nízké sebevědomí a úzkost</strong>: Užívání jako forma <strong>sebemedikace</strong> (snaha utišit vnitřní nepohodu, úzkost nebo deprese).</p>
+                    <p>**Osobnostní rysy:** Impulzivita, sklony k riskování, vyhledávání vzrušení.</p>
                 </li>
                 <li>
-                    <p><strong>Nezralost a nízká frustrační tolerance</strong>: Neschopnost řešit problémy, útěk od reality a náročné situace pomocí látky.</p>
+                    <p>**Psychické problémy:** Nedostatečně léčené duševní poruchy (deprese, úzkosti, ADHD), kde látka slouží k "samoléčbě".</p>
                 </li>
                 <li>
-                    <p><strong>Duální diagnóza</strong>: Přítomnost jiného psychického onemocnění (deprese, úzkostné poruchy, schizofrenie, PCH), které výrazně zvyšuje riziko závislosti.</p>
+                    <p>**Neschopnost vyrovnat se se stresem.**</p>
                 </li>
             </ul>
-            <p><strong>Sociální faktory:</strong></p>
+            <p><strong>Sociální faktory (Vnější):</strong></p>
             <ul>
                 <li>
-                    <p><strong>Rodinné prostředí</strong>: <strong>Problémové vzory</strong> (alkoholismus rodičů, užívání drog), <strong>rozpad rodiny</strong>, nedostatek dohledu nebo extrémní zanedbávání.</p>
+                    <p>**Rodinné prostředí:** Špatné rodinné zázemí, rozvod, násilí, závislost jednoho z rodičů (modelování chování). Nejvýznamnější faktor.</p>
                 </li>
                 <li>
-                    <p><strong>Vliv vrstevníků</strong>: Přidání se k partě, kde je užívání <strong>normou</strong> a podmínkou přijetí (silná socializační role).</p>
+                    <p>**Vrstevníci:** Příslušnost k partě, kde je užívání návykových látek normou. Velký vliv v adolescenci.</p>
                 </li>
                 <li>
-                    <p><strong>Dostupnost látky</strong>: Snadný přístup k alkoholu, cigaretám nebo lékům.</p>
+                    <p>**Školní neúspěch:** Opakované neúspěchy, neúspěšné začlenění do kolektivu.</p>
                 </li>
                 <li>
-                    <p><strong>Kulturní a společenské normy</strong>: Přijímání užívání alkoholu (často i jiných látek) společností jako součást rituálů (např. oslavy).</p>
+                    <p>**Dostupnost látky:** Snadná dostupnost drog nebo alkoholu v lokalitě.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
             <hr>
             <h2 id="otazka2_14"><strong>14) Definujte delikventy. Vymezte nejdůležitější biologické a sociální faktory, které zvyšují pravděpodobnost vzniku a rozvoje kriminálního chování.</strong></h2>
-            <p><strong>Delikvent (Kriminální chování):</strong> Jde o jedince, který se dopustil činu, který je <strong>klasifikován jako trestný čin</strong> (v případě dospělých) nebo <strong>čin jinak trestný</strong> (v případě dětí mladších 15 let). Jedná se o nejzávažnější formu antisociálního chování.</p>
-            <p><strong>Nejdůležitější faktory (Etiologie kriminálního chování):</strong></p>
-            <p><strong>Biologické faktory:</strong></p>
+            <p><strong>Delikvent (Definice):</strong> Z pohledu etopedie je delikvent jedinec, který se dopustil činu, který je v rozporu se zákonem (přestupek, trestný čin). U dětí a mladistvých se hovoří o **juvenilní delikvenci**.</p>
+            <p><strong>Faktory zvyšující kriminální chování:</strong></p>
             <ul>
                 <li>
-                    <p><strong>Neurobiologické dispozice</strong>: Poškození mozku v oblasti <strong>čelního laloku</strong> (regulace impulzů, empatie, plánování), které vede k impulzivitě a nízké schopnosti předvídat důsledky.</p>
+                    <p><strong>Biologické faktory:</strong>
+                        <ul>
+                            <li>**Temperament a impulzivita:** Výrazná dráždivost, neklid, neschopnost odložit odměnu (často spojeno s ADHD).</li>
+                            <li>**Neurobiologické faktory:** Poškození mozku, které ovlivňuje kontrolu agresivity.</li>
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Genetická dispozice</strong>: Vyšší pravděpodobnost PCH/kriminality u dětí, jejichž biologičtí rodiče měli antisociální problémy (neplatí absolutně, ale zvyšuje riziko).</p>
+                    <p><strong>Sociální/Rodinné faktory (Klíčové):</strong>
+                        <ul>
+                            <li>**Rodinná patologie:** Násilí, rozpad rodiny, zanedbání, nízký SES.</li>
+                            <li>**Negativní modely:** Rodič s kriminální minulostí, užívání drog a alkoholu v rodině.</li>
+                            <li>**Absence limitů:** Neefektivní rodičovská kontrola, nedůsledná výchova.</li>
+                        </ul>
+                    </p>
                 </li>
                 <li>
-                    <p><strong>Psychopatie</strong>: Přítomnost znaků jako <strong>nedostatek empatie, manipulace, absence výčitek svědomí</strong>. Jde o extrémní formu PCH.</p>
-                </li>
-            </ul>
-            <p><strong>Sociální faktory (opět nejdůležitější):</strong></p>
-            <ul>
-                <li>
-                    <p><strong>Rodinné prostředí</strong>: <strong>Kriminální vzory v rodině</strong> (rodiče ve vězení), <strong>rozbitá rodina</strong> (zejména absence otcovské role), <strong>zanedbávání, týrání, emocionální deprivace</strong> v raném dětství.</p>
+                    <p><strong>Školní faktory:</strong> Záškoláctví, opakovaný školní neúspěch, předčasné ukončení vzdělávání, sociální exkluze (šikana).</p>
                 </li>
                 <li>
-                    <p><strong>Teorie sociální dezorganizace</strong>: Život v chudé, segregované čtvrti s vysokou kriminalitou, kde je <strong>nedostatek sociální kontroly</strong> (škola, policie) a slabé sociální vazby.</p>
-                </li>
-                <li>
-                    <p><strong>Vliv negativní party</strong>: Převzetí norem a hodnot asociální nebo kriminální skupiny, která poskytuje pocity sounáležitosti a uznání, které jedinec nezískal v rodině.</p>
-                </li>
-                <li>
-                    <p><strong>Školní neúspěch a selhání</strong>: Rané a trvalé školní selhání vede k <strong>vyloučení ze vzdělávacího systému</strong> a k orientaci na alternativní (kriminální) životní dráhu.</p>
+                    <p><strong>Vrstevnické faktory:</strong> Přidání se ke kriminální nebo deviantní partě, která poskytuje model chování, zázemí a přijetí.</p>
                 </li>
             </ul>
             <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
         </div>
     </div>
+
 </body>
 </html>
