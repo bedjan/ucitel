@@ -1,3 +1,5 @@
+# Sociální patologie 
+
 ## 🍃 Kratom (*Mitragyna speciosa*)
 
 Kratom je **tropický strom** z čeledi kávovníkovitých (stejná jako káva), který pochází z jihovýchodní Asie. Listy obsahují psychoaktivní **alkaloidy** (hlavně **mitragynin**), které působí ve slabších dávkách stimulačně a ve vyšších sedativně (opioidně).
