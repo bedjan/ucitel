@@ -1,4 +1,4 @@
-# KOMPLETNÍ PŘEPIS ZADÁNÍ A VÝSLEDKY TESTU ZE SOMATOPEDIE ( získat alespoň 5 bodů ) - POZOR SEKCE 3 NA OBRÁZCÍCH  CHYBÍ!
+# KOMPLETNÍ PŘEPIS ZADÁNÍ A VÝSLEDKY TESTU ZE SOMATOPEDIE ( získat alespoň 5 bodů ) 
 
 ## I. Zadání z obrázků (Původní text)
 
