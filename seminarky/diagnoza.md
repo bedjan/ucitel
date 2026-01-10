@@ -5,12 +5,13 @@
 1. **Jaká je diagnóza chlapce na obrázku? Napište:**
 
 ![Obrázek 1](1.jpg)
+![Obrázek 1_1](1_1.jpg)
 ![Obrázek 2](2.jpg)
 ![Obrázek 3](3.jpg)
 
    _______________________________________________________
 
-3. **Jaká je příčina choroby chlapce na snímku?**
+2. **Jaká je příčina choroby chlapce na snímku?**
    * A) poškození mozku v oblasti gyrus praecentralis
    * B) poškození v oblasti pravé komory koncového mozku
    * C) poškození v oblasti levé komory koncového mozku
@@ -19,6 +20,18 @@
    * F) poškození míchy v oblasti bederní páteře
    * G) degenerace svalových vláken v důsledku delece na chromozomu X
    * H) žádné z uvedených poškození není příčinou dané choroby
+
+
+### 3. Mezi typické příznaky postižení chlapce na obrázku patří:
+
+| | Možnost |
+| :--- | :--- |
+| **A** | nůžkovitá chůze v důsledku spasmu adduktorů dolní končetiny |
+| **B** | Gowersovo znamení |
+| **C** | dysarthrie případně anarthrie |
+| **D** | Westův syndrom |
+| **E** | opistotonus |
+| **F** | žádný z uvedených příznaků není typický pro postižení chlapce na obrázku |
 
 4. **Který z přidružených příznaků nemůže mít chlapec na obrázku:**
    * A) poruchy intelektu
