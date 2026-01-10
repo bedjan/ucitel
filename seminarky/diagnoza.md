@@ -1,4 +1,4 @@
-# KOMPLETNÍ PŘEPIS ZADÁNÍ A VÝSLEDKY TESTU ( získat alespoň 5 bodů )
+# KOMPLETNÍ PŘEPIS ZADÁNÍ A VÝSLEDKY TESTU ( získat alespoň 5 bodů ) - POZOR SEKCE 3 CHYBÍ
 
 ## I. Zadání z obrázků (Původní text)
 
