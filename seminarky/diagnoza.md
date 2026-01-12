@@ -25,12 +25,12 @@
 3. **Mezi typické příznaky postižení chlapce na obrázku patří**
 
 
- * A)  nůžkovitá chůze v důsledku spasmu adduktorů dolní končetiny 
- * B) Gowersovo znamení 
- * C) dysarthrie případně anarthrie 
- * D) Westův syndrom 
- * E) opistotonus 
- * F) žádný z uvedených příznaků není typický pro postižení chlapce na obrázku |
+    * A)  nůžkovitá chůze v důsledku spasmu adduktorů dolní končetiny 
+    * B) Gowersovo znamení 
+    * C) dysarthrie případně anarthrie 
+    * D) Westův syndrom 
+    * E) opistotonus 
+    * F) žádný z uvedených příznaků není typický pro postižení chlapce na obrázku |
 
 4. **Který z přidružených příznaků nemůže mít chlapec na obrázku:**
    * A) poruchy intelektu
@@ -73,27 +73,27 @@
 
 ## II. Výsledek a řešení (Shrnutí)
 
-1/ Jaká je diagnóza chlapce na obrázku? Napište: **Pravostranná hemiparéza**
+1) Jaká je diagnóza chlapce na obrázku? Napište: **Pravostranná hemiparéza**
 
-2/ Jaká je příčina choroby chlapce na snímku?
+2) Jaká je příčina choroby chlapce na snímku?
 **C** – poškození v oblasti levé komory koncového mozku
 
-3/ Mezi typické příznaky postižení chlapce na obrázku patří:
+3) Mezi typické příznaky postižení chlapce na obrázku patří:
 **F** – žádný z uvedených příznaků není typický pro postižení chlapce na obrázku
 
-4/ Který z přidružených příznaků **<u>nemůže mít</u>** chlapec na obrázku:
+4) Který z přidružených příznaků **<u>nemůže mít</u>** chlapec na obrázku:
 **C** – demyelinizace axonů nervových vláken
 
-5/ Jaké jsou možnosti inkluze chlapce na obrázku v rámci společného vzdělávání?
+5) Jaké jsou možnosti inkluze chlapce na obrázku v rámci společného vzdělávání?
 **A** – dítě je možné bez problémů inkludovat
 
-6/ Kterou z příčin choroby chlapce na obrázku můžeme vyloučit?
+6) Kterou z příčin choroby chlapce na obrázku můžeme vyloučit?
 **E** – hyperbilirubinémii při Rh-inkompatibilitě
 
-7/ Který z uvedených psychomotorických projevů během prvního roku života **<u>nemusí být</u>** u chlapce na obrázku patologicky pozměněný v důsledku jeho choroby?
+7) Který z uvedených psychomotorických projevů během prvního roku života **<u>nemusí být</u>** u chlapce na obrázku patologicky pozměněný v důsledku jeho choroby?
 **F** – lateralita
 
-8/ Projev příznaků choroby chlapce na obrázku se nejvíce podobá projevům příznaků:
+8) Projev příznaků choroby chlapce na obrázku se nejvíce podobá projevům příznaků:
 **A** – centrální mozkové příhody
 
 
