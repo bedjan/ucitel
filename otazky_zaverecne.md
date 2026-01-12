@@ -1,4 +1,7 @@
-1. OTÁZKY KE ZKOUŠCE ZE SPECIÁLNÍ PEDAGOGIKY:
+# OTÁZKY PŘEVEDENÉ Z PDF UJEP:
+
+
+# 1. OTÁZKY KE ZKOUŠCE ZE SPECIÁLNÍ PEDAGOGIKY:
 
 
  1) Vymezte speciální pedagogiku jako vědní obor, její předmět a cíl.
@@ -43,8 +46,10 @@
 
  13) Sociokulturní handicap a škola. Výchova a vzdělávání minorit, etnik, Adaptace 
  imigrantů, jaké jsou hlavní psychosociální problémy v rámci školy?
+
 
- 2. OTÁZKY KE ZKOUŠCE Z PSYCHOPEDIE A ETOPEDIE:
+# 2. OTÁZKY KE ZKOUŠCE Z PSYCHOPEDIE A ETOPEDIE:
+
 
  1) Mentální retardace, vymezení pojmu, klasifikace, hodnocení (kvalitativní a 
  kvantitativni)V čem spočívá základní rozdíl mezi mentální. retardaci a demencí?
