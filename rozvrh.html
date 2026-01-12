@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozvrh CCV | Speciální pedagogika</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent: #38bdf8;
+            --accent-glow: rgba(56, 189, 248, 0.5);
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+            --holiday: #ef4444;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            background-image: 
+                radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.15) 0px, transparent 50%),
+                radial-gradient(at 100% 100%, rgba(56, 189, 248, 0.1) 0px, transparent 50%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 20px;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            letter-spacing: -0.025em;
+            margin-bottom: 10px;
+            background: linear-gradient(to right, #fff, var(--accent));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .info-panel {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 20px;
+            margin-bottom: 30px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .info-item span {
+            display: block;
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .info-item p {
+            margin: 5px 0 0 0;
+            font-weight: 600;
+        }
+
+        section {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 20px;
+            overflow: hidden;
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            padding: 20px 25px;
+            margin: 0;
+            background: rgba(255, 255, 255, 0.03);
+            font-size: 1.25rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: left;
+            background: rgba(0, 0, 0, 0.2);
+            color: var(--text-dim);
+            font-weight: 400;
+            font-size: 0.85rem;
+            padding: 15px 25px;
+            text-transform: uppercase;
+        }
+
+        td {
+            padding: 15px 25px;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.95rem;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        tr:hover td {
+            background: rgba(56, 189, 248, 0.05);
+        }
+
+        .date-cell {
+            font-weight: 600;
+            color: var(--accent);
+            white-space: nowrap;
+        }
+
+        .subject-code {
+            color: var(--text-dim);
+            font-size: 0.8rem;
+            margin-left: 8px;
+        }
+
+        .holiday {
+            color: var(--holiday);
+            background: rgba(239, 68, 68, 0.05);
+        }
+
+        .badge {
+            padding: 4px 10px;
+            border-radius: 6px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        .zk { border: 1px solid #f39c12; color: #f39c12; }
+        .zap { border: 1px solid #27ae60; color: #27ae60; }
+
+        @media (max-width: 600px) {
+            body { padding: 10px; }
+            td, th { padding: 12px 15px; font-size: 0.85rem; }
+            h1 { font-size: 1.8rem; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Speciální pedagogika</h1>
+        <p style="color: var(--text-dim)">Celoživotní vzdělávání | ZS 2025/2026</p>
+    </header>
+
+    <div class="info-panel">
+        <div class="info-item">
+            <span>Lokalita</span>
+            <p>PF UJEP, Ústí nad Labem</p>
+        </div>
+        <div class="info-item">
+            <span>Učebna</span>
+            <p>České Mládeže 8 (CN-MA)</p>
+        </div>
+        <div class="info-item">
+            <span>Rozvrh</span>
+            <p>Pátek 14:00+ | Sobota 09:00+</p>
+        </div>
+    </div>
+
+    <section>
+        <h2>Harmonogram výuky</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Datum</th>
+                    <th>Předmět</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td class="date-cell">So 08.11.2025</td><td>Základy etopedie I <span class="subject-code">SPC06</span></td></tr>
+                <tr><td class="date-cell">So 15.11.2025</td><td>Problematika osob se smyslovým postižením I <span class="subject-code">SPC08</span></td></tr>
+                <tr><td class="date-cell">Pá 21.11.2025</td><td>Základy speciální pedagogiky I <span class="subject-code">SPC01</span></td></tr>
+                <tr><td class="date-cell">So 22.11.2025</td><td>Základy speciální pedagogiky I <span class="subject-code">SPC01</span></td></tr>
+                <tr><td class="date-cell">So 29.11.2025</td><td>Sociální patologie <span class="subject-code">SPC02</span></td></tr>
+                <tr><td class="date-cell">So 06.12.2025</td><td>Psychologie jedinců s postižením <span class="subject-code">SPC04</span></td></tr>
+                <tr><td class="date-cell">So 13.12.2025</td><td>Psychologie jedinců s postižením <span class="subject-code">SPC04</span></td></tr>
+                <tr class="holiday"><td>26.12 - 03.01</td><td>Vánoční prázdniny</td></tr>
+                <tr><td class="date-cell">So 10.01.2026</td><td>Základy somatopedie <span class="subject-code">SPC07</span></td></tr>
+                <tr><td class="date-cell">So 17.01.2026</td><td>Expresivní terapie <span class="subject-code">SPC09</span></td></tr>
+                <tr><td class="date-cell">Pá 23.01.2026</td><td>Základy psychopedie I <span class="subject-code">SPC05</span></td></tr>
+                <tr><td class="date-cell">So 24.01.2026</td><td>Základy psychopedie I <span class="subject-code">SPC05</span></td></tr>
+                <tr><td class="date-cell">So 31.01.2026</td><td>Podpora žáků s PAS <span class="subject-code">SPC03</span></td></tr>
+                <tr class="holiday"><td>07.02 - 14.02</td><td>Jarní prázdniny</td></tr>
+                <tr><td class="date-cell">So 21.02.2026</td><td>Sociální patologie <span class="subject-code">SPC02</span></td></tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Přehled předmětů</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Kód</th>
+                    <th>Vyučující</th>
+                    <th>Ukončení</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr><td>SPC01</td><td>PhDr. Mgr. Sylva Přikrylová</td><td><span class="badge zap">ZÁP</span></td></tr>
+                <tr><td>SPC02</td><td>Mgr. et Mgr. Stanislava Szabo</td><td><span class="badge zk">ZK</span></td></tr>
+                <tr><td>SPC03</td><td>doc. PhDr. Ladislav Zilcher, Ph.D.</td><td><span class="badge zk">ZK</span></td></tr>
+                <tr><td>SPC04</td><td>Mgr. et Mgr. Stanislava Szabo</td><td><span class="badge zk">ZK</span></td></tr>
+                <tr><td>SPC05</td><td>Mgr. Roman Stružinský</td><td><span class="badge zk">ZK</span></td></tr>
+                <tr><td>SPC06</td><td>PaedDr. Ing. Mgr. Jan Tirpák</td><td><span class="badge zk">ZK</span></td></tr>
+                <tr><td>SPC07</td><td>prof. PhDr. Jiří Škoda</td><td><span class="badge zap">ZÁP</span></td></tr>
+                <tr><td>SPC09</td><td>Mgr. Helena Kumperová, Ph.D.</td><td><span class="badge zap">ZÁP</span></td></tr>
+            </tbody>
+        </table>
+    </section>
+</div>
+
+</body>
+</html>
