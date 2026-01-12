@@ -70,7 +70,7 @@
    * G) roztroušené mozkomíšní sklerózy
 
 ---
-
+![Obrázek 4](4.jpg)
 ## II. Výsledek a řešení (Shrnutí)
 
 1) Jaká je diagnóza chlapce na obrázku? Napište: **Pravostranná hemiparéza**
@@ -98,3 +98,37 @@
 
 
 **Klíčový poznatek:** Jelikož obrázek ukazuje postižení pravé strany těla, příčina musí být v **levé hemisféře** mozku kvůli křížení nervových drah.
+
+
+
+≈=========================
+# Diparetická forma DMO
+**Diagnóza:** Diparetická forma DMO
+
+**2) Jaká je příčina choroby na snímku?**
+**A) poškození mozku v oblasti gyrus praecentralis**
+
+*Vzniká poškozením v oblasti primární motorické kůry, která leží před středovou mozkovou rýhou (sulcus centralis) v gyrus praecentralis (temenní lalok mozku).*
+
+**3. Mezi typické příznaky postižení chlapce na obrázku patří:**
+**A) nůžkovitá chůze v důsledku spasmu adduktorů dolní končetiny**
+
+*Mezi hlavní příznaky patří nůžkovitá chůze. Dolní končetiny se díky spasmu adduktorů vtáčejí dovnitř a při chůzi se mohou kolena křížit přes sebe. Při chůzi dochází k předsouvání ramen, předklánění pánve a trupu, našlapováním na špičky.*
+
+**4) Který z přidružených příznaků nemůže mít chlapec na obrázku:**
+**C) demyelinizace axonů nervových vláken**
+*DMO není degenerativní ani demyelinizační onemocnění, jde o nepokračující poškození nezralého mozku. Syndrom nepokračujícího postižení nezralého mozku.*
+
+**5) Jaké jsou možnosti inkluze chlapce na obrázku v rámci společného vzdělávání?**
+**A) dítě je možné bez problému inkludovat**
+
+**6) Kterou z příčin choroby chlapce na obrázku můžeme vyloučit?**
+**E) hyperbilirubinémie při Rh-inkompatibilitě**
+
+**7) Který z uvedených psychomotorických projevů během prvního roku života nemusí být u chlapce na obrázku patologicky pozměněný v důsledku jeho choroby?**
+**B) vzpor na předloktí, C) vzpor na natažených pažích**
+*V prvním trimenonu stejný jako u intaktního jedince. Ve druhém trimenonu se objevuje vzpor na předloktí, později vzpor na rukou, stejně jako u intaktního jedince.*
+
+**8) Projev příznaků choroby chlapce na obrázku se nejvíce podobá projevům příznaků:**
+**g) roztroušené mozkomíšní sklerózy**
+
