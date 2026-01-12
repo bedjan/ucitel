@@ -70,7 +70,7 @@
    * G) roztroušené mozkomíšní sklerózy
 
 ---
-![Obrázek 4](4.jpg)
+
 ## II. Výsledek a řešení (Shrnutí)
 
 1) Jaká je diagnóza chlapce na obrázku? Napište: **Pravostranná hemiparéza**
@@ -102,6 +102,8 @@
 
 
 ≈=========================
+![Obrázek 4](4.jpg)
+
 # Diparetická forma DMO
 **Diagnóza:** Diparetická forma DMO
 
