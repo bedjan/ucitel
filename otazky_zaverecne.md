@@ -1,4 +1,4 @@
-# OTÁZKY PŘEVEDENÉ Z PDF UJEP:
+# OTÁZKY PŘEVEDENÉ Z PDF UJEP [VIZ.](https://www.pf.ujep.cz/wp-content/uploads/2025/11/SPC-Speci%C3%A1ln%C4%9Bpedagogick%C3%A1-%C4%8Dinnost.pdf):
 
 
 # 1. OTÁZKY KE ZKOUŠCE ZE SPECIÁLNÍ PEDAGOGIKY:
