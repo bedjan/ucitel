@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rozvrh CCV | Stav k lednu 2026</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --accent: #38bdf8;
+            --text-main: #f1f5f9;
+            --text-dim: #94a3b8;
+            --border: rgba(255, 255, 255, 0.1);
+            --zk-color: #f39c12;
+            --zap-color: #27ae60;
+            --done-color: #475569;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            background-image: radial-gradient(at 0% 0%, rgba(56, 189, 248, 0.1) 0px, transparent 50%);
+            color: var(--text-main);
+            margin: 0;
+            padding: 10px;
+            min-height: 100vh;
+        }
+
+        .container { max-width: 1000px; margin: 0 auto; }
+
+        header { text-align: center; padding: 30px 0; }
+        h1 { font-size: 2rem; margin: 0; background: linear-gradient(to right, #fff, var(--accent)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+        .schedule-grid { display: grid; gap: 12px; }
+
+        .event-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 18px;
+            display: grid;
+            grid-template-columns: 140px 1fr 100px;
+            align-items: center;
+        }
+
+        /* Styl pro splněné termíny */
+        .event-card.completed {
+            opacity: 0.5;
+            background: rgba(15, 23, 42, 0.4);
+            border-color: transparent;
+        }
+
+        .completed .date-box { text-decoration: line-through; color: var(--done-color); }
+        .completed .subject { color: var(--text-dim); }
+        .completed .badge { border-color: var(--done-color); color: var(--done-color); }
+
+        .date-box { font-weight: 600; color: var(--accent); }
+        .date-box span { display: block; font-size: 0.8rem; color: var(--text-dim); font-weight: 400; }
+
+        .info-box .subject { font-weight: 600; display: block; margin-bottom: 2px; }
+        .info-box .teacher { font-size: 0.85rem; color: var(--text-dim); }
+        .info-box .room { font-size: 0.75rem; background: rgba(255,255,255,0.05); padding: 2px 6px; border-radius: 4px; margin-right: 8px; }
+
+        .status-box { text-align: right; }
+        .badge { font-size: 0.7rem; padding: 4px 8px; border-radius: 5px; font-weight: 700; text-transform: uppercase; border: 1px solid; }
+
+        .zk { color: var(--zk-color); border-color: var(--zk-color); }
+        .zap { color: var(--zap-color); border-color: var(--zap-color); }
+        .done-badge { color: var(--done-color); border-color: var(--done-color); }
+
+        .holiday { grid-template-columns: 1fr; text-align: center; font-size: 0.9rem; opacity: 0.6; }
+
+        @media (max-width: 768px) {
+            .event-card { grid-template-columns: 1fr; text-align: center; gap: 10px; }
+            .status-box { text-align: center; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h1>Speciální pedagogika</h1>
+        <p style="color: var(--text-dim)">Stav výuky k pondělí 12. 1. 2026</p>
+    </header>
+
+    <div class="schedule-grid">
+        <div class="event-card completed">
+            <div class="date-box">So 08.11.2025 <span>Hotovo</span></div>
+            <div class="info-box">
+                <span class="subject">Základy etopedie I</span>
+                <span class="room">CN-MA</span> <span class="teacher">PaedDr. Ing. Mgr. Jan Tirpák, Ph.D.</span>
+            </div>
+            <div class="status-box"><span class="badge done-badge">✓ Splněno</span></div>
+        </div>
+
+        <div class="event-card completed">
+            <div class="date-box">So 15.11.2025 <span>Hotovo</span></div>
+            <div class="info-box">
+                <span class="subject">Problematika osob se smyslovým postižením I</span>
+                <span class="room">CN-MA</span> <span class="teacher">PhDr. Mgr. Sylva Přikrylová</span>
+            </div>
+            <div class="status-box"><span class="badge done-badge">✓ Splněno</span></div>
+        </div>
+
+        <div class="event-card completed">
+            <div class="date-box">So 22.11.2025 <span>Hotovo</span></div>
+            <div class="info-box">
+                <span class="subject">Základy speciální pedagogiky I</span>
+                <span class="room">CN-MA</span> <span class="teacher">PhDr. Mgr. Sylva Přikrylová</span>
+            </div>
+            <div class="status-box"><span class="badge done-badge">✓ Splněno</span></div>
+        </div>
+
+        <div class="event-card completed">
+            <div class="date-box">So 29.11.2025 <span>Hotovo</span></div>
+            <div class="info-box">
+                <span class="subject">Sociální patologie</span>
+                <span class="room">CN-MA</span> <span class="teacher">Mgr. et Mgr. Stanislava Szabo</span>
+            </div>
+            <div class="status-box"><span class="badge done-badge">✓ Splněno</span></div>
+        </div>
+
+        <div class="event-card completed">
+            <div class="date-box">So 13.12.2025 <span>Hotovo</span></div>
+            <div class="info-box">
+                <span class="subject">Psychologie jedinců s postižením</span>
+                <span class="room">CN-MA</span> <span class="teacher">Mgr. et Mgr. Stanislava Szabo</span>
+            </div>
+            <div class="status-box"><span class="badge done-badge">✓ Splněno</span></div>
+        </div>
+
+        <div class="event-card holiday completed">Vánoční prázdniny (Uplynulo)</div>
+
+        <div class="event-card completed">
+            <div class="date-box">So 10.01.2026 <span>Hotovo</span></div>
+            <div class="info-box">
+                <span class="subject">Základy somatopedie</span>
+                <span class="room">CN-MA</span> <span class="teacher">prof. PhDr. Jiří Škoda, Ph.D.</span>
+            </div>
+            <div class="status-box"><span class="badge done-badge">✓ Splněno</span></div>
+        </div>
+
+        <div class="event-card" style="border-color: var(--accent); box-shadow: 0 0 15px rgba(56, 189, 248, 0.2);">
+            <div class="date-box">So 17.01.2026 <span>ZA 5 DNÍ</span></div>
+            <div class="info-box">
+                <span class="subject">Expresivní terapie v léčebně ped. kontextu</span>
+                <span class="room">CN-MA</span> <span class="teacher">Mgr. Helena Kumperová, Ph.D.</span>
+            </div>
+            <div class="status-box"><span class="badge zap">Zápočet</span></div>
+        </div>
+
+        <div class="event-card">
+            <div class="date-box">Pá 23.01.2026 <span>14:00</span></div>
+            <div class="info-box">
+                <span class="subject">Základy psychopedie I</span>
+                <span class="room">CN-MA</span> <span class="teacher">Mgr. Roman Stružinský</span>
+            </div>
+            <div class="status-box"><span class="badge zk">Zkouška</span></div>
+        </div>
+
+        <div class="event-card">
+            <div class="date-box">So 24.01.2026 <span>09:00</span></div>
+            <div class="info-box">
+                <span class="subject">Základy psychopedie I</span>
+                <span class="room">CN-MA</span> <span class="teacher">Mgr. Roman Stružinský</span>
+            </div>
+            <div class="status-box"><span class="badge zk">Zkouška</span></div>
+        </div>
+
+        <div class="event-card">
+            <div class="date-box">So 31.01.2026 <span>09:00</span></div>
+            <div class="info-box">
+                <span class="subject">Podpora žáků s PAS</span>
+                <span class="room">CN-MA</span> <span class="teacher">doc. PhDr. Ladislav Zilcher, Ph.D.</span>
+            </div>
+            <div class="status-box"><span class="badge zk">Zkouška</span></div>
+        </div>
+
+        <div class="event-card holiday">Jarní prázdniny (Únor)</div>
+
+        <div class="event-card">
+            <div class="date-box">So 21.02.2026 <span>09:00</span></div>
+            <div class="info-box">
+                <span class="subject">Sociální patologie (Dokončení)</span>
+                <span class="room">CN-MA</span> <span class="teacher">Mgr. et Mgr. Stanislava Szabo</span>
+            </div>
+            <div class="status-box"><span class="badge zk">Zkouška</span></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

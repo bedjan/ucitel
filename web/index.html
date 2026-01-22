@@ -1,0 +1,1065 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPC UL 2025 – Kontakty a Otázky</title>
+    <style>
+        /* CSS STYLY PRO PŘEHLEDNÝ VZHLED */
+        /* Inspirováno stylem http://janbednar.atwebpages.com/ (tmavě modrá lišta, bílé pozadí obsahu, jednoduchá navigace) */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; /* Světle šedé pozadí */
+            color: #333;
+        }
+
+        .header {
+            background-color: #004a99; /* Tmavě modrá lišta */
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Stín pod lištou */
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .main-nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 5px 10px;
+            transition: background-color 0.3s;
+            border-radius: 4px;
+        }
+
+        .main-nav a:hover {
+            background-color: #00366b; /* Mírně tmavší modrá při najetí */
+            color: white;
+        }
+
+        /* HLAVNÍ KARTY OBSAHU */
+        .content {
+            padding: 30px;
+            max-width: 1000px;
+            margin: 20px auto;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        /* Styl pro hlavní nadpisy sekcí (otázek) */
+        .content h1 {
+            color: #004a99; /* Modrá barva */
+            border-bottom: 2px solid #a8d0ff; /* Světlejší modrá linka pod nadpisem */
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        /* Odkazy v obsahu (seznam otázek) */
+        .content a {
+            color: #004a99; /* Modré odkazy */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .content a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info {
+            margin-top: 20px;
+            padding: 15px;
+            background-color: #e9e9e9;
+            border-left: 5px solid #004a99;
+            white-space: pre-wrap;
+            line-height: 1.5; /* Lepší čitelnost kontaktních údajů */
+        }
+        
+        .email-link strong {
+            display: block;
+            font-weight: normal;
+            margin-top: 5px;
+            font-style: italic;
+        }
+        
+        /* STYLY PRO ODPOVĚDI NA OTÁZKY */
+        .content hr {
+            border: 0;
+            height: 1px;
+            background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0));
+            margin: 30px 0;
+        }
+        
+        .content h2 {
+            color: #333;
+            font-size: 1.4em;
+            margin-top: 40px;
+        }
+        
+        /* Úprava seznamů pro lepší čitelnost */
+        .content ul, .content ol {
+            line-height: 1.6;
+        }
+
+        /* STYLY PRO MOBILNÍ ZAŘÍZENÍ */
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 15px;
+            }
+
+            .main-nav {
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            .main-nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+            
+            .main-nav a {
+                display: block;
+                padding: 8px 0;
+                border-bottom: 1px solid #005bb5;
+            }
+            
+            .content {
+                padding: 15px;
+            }
+        }
+        
+        /* Styl pro odkaz zpět na seznam otázek */
+        .back-to-top {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+            font-size: 0.9em;
+            color: #555 !important; /* Šedá barva pro menší důraz */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <div class="logo">spc.ul.2025&#64;seznam&#46;cz</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="rozvrh.html" target="_blank">Rozvrh</a></li>
+                <li><a href="https://stag.ujep.cz/" target="_blank">Stag</a></li>
+				<li><a href="https://moodle.pf.ujep.cz/my/" target="_blank">Moodle</a></li>
+                <li><a href="https://email.seznam.cz" target="_blank">Email</a></li>
+                <li><a href="https://www.facebook.com/groups/2026049324832552" target="_blank">Facebook</a></li>
+                <li><a href="https://www.dropbox.com/home" target="_blank">Dropbox</a></li>
+                <li><a href="https://notebooklm.google.com" target="_blank">AI</a></li>
+                <li><a href="https://ccv.pf.ujep.cz/kontakty/" target="_blank">Kontakty</a></li>
+                <li><a href="https://github.com/bedjan/ucitel/blob/main/otazky_zaverecne.md" target="_blank">Otázky</a></li>
+                <li><a href="https://www.pf.ujep.cz/wp-content/uploads/2025/11/SPC-okruhy-temat_z%C3%A1v%C4%9Bre%C4%8Dn%C3%BDch-_praci.docx" target="_blank">Témata</a></li>
+                <li><a href="https://www.pf.ujep.cz/centrum-pedagogicke-praxe/praxe-ccv" target="_blank">Praxe</a></li>
+                <li><a href="https://www.ujep.cz/cs/ujepapp" target="_blank">UJEPapka</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <div class="content">
+        <h1><a href="https://www.pf.ujep.cz/cs/cat/centrum-celozivotniho-vzdelavani-kontakty" target="_blank">Důležité kontakty a studijní odkazy</a></h1>
+        
+        <h2>Kontakt na vedoucí CCV</h2>
+        <h3 id="ing-lenka-h-ebejkov-">Ing. Lenka Hřebejková</h3>
+        <div class="contact-info">
+            vedoucí CCV
+            -
+            Pracoviště: Centrum celoživotního vzdělávání
+            Telefon: +420 475 283 176
+            E-mail: <a href="mailto:lenka.hrebejkova&#64;ujep&#46;cz">lenka&#46;hrebejkova&#64;ujep&#46;cz</a>
+        </div>
+
+        <p id="otazky_okruh1">
+            <h1><strong>1. OTÁZKY KE ZKOUŠCE ZE SPECIÁLNÍ PEDAGOGIKY:</strong></h1>
+        </p>
+        
+        <ol>
+            <li><a href="#otazka1_1">Vymezte speciální pedagogiku jako vědní obor, její předmět a cíl.</a></li>
+            <li><a href="#otazka1_2">Popište současné trendy uplatňované ve speciální pedagogice, jak ovlivňují současné pojetí tohoto oboru? Jak se vyvíjel postoj společnosti vůči znevýhodněným spoluobčanům?</a></li>
+            <li><a href="#otazka1_3">Jak je vnitřně speciální pedagogika členěna? Charakterizujte jednotlivé dílčí disciplíny speciální pedagogiky.</a></li>
+            <li><a href="#otazka1_4">Vysvětlete podobněji klasifikaci handicapů podle doby jejich vzniku, Jak se liší faktory v prenatálním a v postnatálním období?</a></li>
+            <li><a href="#otazka1_5">V čem spočívá poslání a význam speciálně pedagogické diagnostiky? Uveďte přehled nejpoužívanějších diagnostických metod. Mezi které metody byste zařadil analýzu písemného projevu?</a></li>
+            <li><a href="#otazka1_6">Vysvětlete rozdíl mezi reedukací a kompenzací. Co je míněno pod pojmem ucelené (komprehenzivní) rehabilitace?</a></li>
+            <li><a href="#otazka1_7">Jaké otázky materiální, technické, psychické a sociální jsou spojeny s integraci lidí s postižením?</a></li>
+            <li><a href="#otazka1_8">Uveďte nejznámější speciální výchovné, vzdělávací a poradenské instituce. Charakterizujte vybranou instituci, její poslání, cíl, předmět, rozsah a typ poskytované služby, jaké užívá metody pro splnění svých cílů.</a></li>
+            <li><a href="#otazka1_9">Vysvětlete vznik a formy dětské mozkové obrny. Jaké jsou možnosti a specifika práce s takto handicapovanými osobami ?</a></li>
+            <li><a href="#otazka1_10">Vysvětlete příčiny vzniku epilepsie. Popište její projevy. Jaké jsou zásady a specifika práce s takto handicapovanými osobami ?</a></li>
+            <li><a href="#otazka1_11">Definujte poruchy školních dovedností (specifické poruchy učení). Jaké jsou příčiny výše uvedených poruch? Jaké jsou symptomy lehké mozkové dysfunkce?</a></li>
+            <li><a href="#otazka1_12">Vyjmenujte nejčastější druhy SPU. Charakterizujte jednu z nich. Jaké jsou stávající formy péče o žáky s poruchami učení?</a></li>
+            <li><a href="#otazka1_13">Sociokulturní handicap a škola. Výchova a vzdělávání minorit, etnik, Adaptace imigrantů, jaké jsou hlavní psychosociální problémy v rámci školy?</a></li>
+        </ol>
+
+        <p id="otazky_okruh2">
+            <h1><strong>2. OTÁZKY KE ZKOUŠCE Z PSYCHOPEDIE A ETOPEDIE:</strong></h1>
+        </p>
+        
+        <ol>
+            <li><a href="#otazka2_1">Mentální retardace, vymezení pojmu, klasifikace, hodnocení (kvalitativní a kvantitativni). V čem spočívá základní rozdíl mezi mentální. retardaci a demencí?</a></li>
+            <li><a href="#otazka2_2">Jaké příčiny mohou vést k defektu rozumových schopností a rozvoji mentální retardace?</a></li>
+            <li><a href="#otazka2_3">Jaký je význam kvalitativního hodnocení rozumových schopností pro práci s lidmi s mentálním postižením?</a></li>
+            <li><a href="#otazka2_4">Charakterizujte možnosti edukace a následné společenské uplatnění jedinců s postižením na úrovni středně těžké mentální retardace.</a></li>
+            <li><a href="#otazka2_5">Charakterizujte typické znaky myšleni a řeči lidí s mentálním postižením. Jaké nápadnosti se objevují v jejich chování, jaká je jejich příčina ?</a></li>
+            <li><a href="#otazka2_6">Jaké jsou složky a formy výchovné práce, realizované v rámci ústavní péče, jaký je jejich cíl?</a></li>
+            <li><a href="#otazka2_7">Jaká jsou specifika práce s jedinci s Downovým syndromem. Možnosti výchovy a vzdělávání. Typické odlišnosti těchto osob ?</a></li>
+            <li><a href="#otazka2_8">Autismus a jeho formy (syndromy) etiologie, prevalence v populaci. Obecná charakteristika platná pro všechny jednotlivé syndromy. Jaké jsou principy práce se žáky s toto poruchou? Charakterizujte metodu strukturovaného přístupu</a></li>
+            <li><a href="#otazka2_9">Definujte poruchy chování a uveďte obecné znaky jejich nositelů.</a></li>
+            <li><a href="#otazka2_10">Jaké faktory mohou zvyšovat pravděpodobnost vzniku a rozvoje poruch chování</a></li>
+            <li><a href="#otazka2_11">Jak lze třídit poruchy chování z hlediska závažnosti pro společnost? Charakterizujte analogické znaky jednotlivých kategorií.</a></li>
+            <li><a href="#otazka2_12">Definujte syndrom závislosti, popište její symptomy. Jaký je rozdíl mezi škodlivým užíváním a závislostí?</a></li>
+            <li><a href="#otazka2_13">Jaké psychologické a sociální faktory mohou zvyšovat pravděpodobnost rozvoje závislosti?</a></li>
+            <li><a href="#otazka2_14">Definujte delikventy. Vymezte nejdůležitější biologické a sociální faktory, které zvyšují pravděpodobnost vzniku a rozvoje kriminálního chování.</a></li>
+        </ol>
+        <br>
+        <hr>
+               
+
+        <div>
+            <h1><strong>1. OTÁZKY KE ZKOUŠCE ZE SPECIÁLNÍ PEDAGOGIKY</strong></h1>
+            <hr>
+            
+            <h2 id="otazka1_1"><strong>1) Vymezte speciální pedagogiku jako vědní obor, její předmět a cíl.</strong></h2>
+            <p>Speciální pedagogika (SP – <em>speciální pedagogika</em>) je vědní obor pedagogiky, který se zabývá výchovou, vzděláváním, podporou, diagnostikou a intervencí u osob se zdravotním postižením (ZP – <em>zdravotní postižení</em>), zdravotním znevýhodněním (ZZ – <em>zdravotní znevýhodnění</em>) a sociálním znevýhodněním (SoZ – <em>sociální znevýhodnění</em>).</p>
+            <p><strong>Předmět SP:</strong></p>
+            <ul>
+                <li>
+                    <p>zkoumání potřeb žáků se speciálními vzdělávacími potřebami (SVP – <em>speciální vzdělávací potřeby</em>),</p>
+                </li>
+                <li>
+                    <p>vytváření podmínek pro jejich učení, adaptaci a socializaci (proces začleňování do společnosti),</p>
+                </li>
+                <li>
+                    <p>navrhování metod reedukace (RE – <em>reedukace = náprava schopností</em>) a kompenzace (KO – <em>kompenzace = nahrazení funkce</em>).</p>
+                </li>
+            </ul>
+            <p><strong>Cíl SP:</strong></p>
+            <ul>
+                <li>
+                    <p>maximalizovat rozvoj osobnosti jedince v rámci jeho možností,</p>
+                </li>
+                <li>
+                    <p>podpořit jeho nezávislost, soběstačnost a inkluzi (IN – <em>začleňování do běžného prostředí</em>),</p>
+                </li>
+                <li>
+                    <p>odstranit bariéry v přístupu ke vzdělávání a životu.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_2"><strong>2) Současné trendy ve speciální pedagogice + vývoj postojů společnosti.</strong></h2>
+            <p><strong>Současné trendy:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Inkluze (IN)</strong> – společné vzdělávání dětí se SVP a dětí bez znevýhodnění.</p>
+                </li>
+                <li>
+                    <p><strong>Raná péče (RP – <em>program péče pro děti do 7 let</em>)</strong> – čím dříve je zahájena intervence, tím lepší výsledky.</p>
+                </li>
+                <li>
+                    <p><strong>Multidisciplinární spolupráce (MDT)</strong> – spolupráce SP, psychologů, logopedů (LOG – <em>logoped</em>), sociálních pracovníků.</p>
+                </li>
+                <li>
+                    <p><strong>Asistivní technologie (AT – <em>kompenzační pomůcky</em>)</strong> – tablety, komunikátory, software AAC (AAC – <em>alternativní a augmentativní komunikace</em>).</p>
+                </li>
+                <li>
+                    <p><strong>Individualizace výuky (IV)</strong> – přizpůsobení tempa, metod a obsahu.</p>
+                </li>
+            </ul>
+            <p><strong>Vývoj společenských postojů:</strong></p>
+            <ul>
+                <li>
+                    <p>do 19. století – <strong>segregace (SE – oddělování)</strong>, ústavy, izolace, charitativní pojetí,</p>
+                </li>
+                <li>
+                    <ol start="20">
+                        <li>
+                            <p>století – <strong>integrace (IG)</strong> – děti se začleňují, ale jen při splnění podmínek,</p>
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    <p>současnost – <strong>inkluzivní společnost</strong>, lidská práva, rovné šance.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_3"><strong>3) Vnitřní členění speciální pedagogiky. Charakteristika disciplín.</strong></h2>
+            <p>Speciální pedagogika se člen&iacute; podle typu postižen&iacute;:</p>
+            <ol>
+                <li>
+                    <p><strong>Surdopedie (SPD – <em>pedagogika osob se sluchovým postižením</em>)</strong></p>
+                </li>
+                <li>
+                    <p><strong>Tyflopedie (TPD – <em>pedagogika osob se zrakovým postižením</em>)</strong></p>
+                </li>
+                <li>
+                    <p><strong>Psychopedie (PSP – <em>pedagogika osob s mentálním postižením</em>)</strong></p>
+                </li>
+                <li>
+                    <p><strong>Somatopedie (SMP – <em>pedagogika osob s tělesným postižením</em>)</strong></p>
+                </li>
+                <li>
+                    <p><strong>Logopedie (LOG)</strong> – osoby s narušenou komunikačn&iacute; schopnost&iacute;.</p>
+                </li>
+                <li>
+                    <p><strong>Etopedie (ETP – <em>pedagogika osob s poruchami chování</em>)</strong></p>
+                </li>
+                <li>
+                    <p><strong>Pedagogika osob se sociálním znevýhodněním (SoZ)</strong></p>
+                </li>
+            </ol>
+            <p>Každá disciplína se zabývá diagnostikou, podporou, metodikou učení a kompenzací specifických bariér.</p>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_4"><strong>4) Klasifikace handicapů podle doby vzniku.</strong></h2>
+            <p>Handicapy se dělí na:</p>
+            <ul>
+                <li>
+                    <p><strong>prenatální (PN – <em>období před narozením</em>)</strong> – genetick&eacute; vady, infekce matky, už&iacute;v&aacute;n&iacute; alkoholu (FAS – <em>fet&aacute;ln&iacute; alkoholov&yacute; syndrom</em>), l&eacute;ky, oz&aacute;řen&iacute;,</p>
+                </li>
+                <li>
+                    <p><strong>perinatální (PE – <em>při porodu</em>)</strong> – komplikovan&yacute; porod, hypoxie (nedostatek kysl&iacute;ku), n&iacute;zk&aacute; porodn&iacute; hmotnost,</p>
+                </li>
+                <li>
+                    <p><strong>postnatální (PO – <em>po narození</em>)</strong> – &uacute;razy, infekce CNS (centr&aacute;ln&iacute; nervov&aacute; soustava), psychosoci&aacute;ln&iacute; deprivace (PD – <em>nedostatek podnětů</em>).</p>
+                </li>
+            </ul>
+            <p>Rozd&iacute;l:<br>PN po&scaron;kozen&iacute; ovlivňuje v&yacute;voj již v těhotenst&iacute;, PO vznik&aacute; až vlivem prostřed&iacute;.</p>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_5"><strong>5) Poslání speciálně pedagogické diagnostiky + metody.</strong></h2>
+            <p>Diagnostika SP slouž&iacute; k pozn&aacute;n&iacute; schopnost&iacute; jedince, př&iacute;čin probl&eacute;mů, jeho potřeb a k n&aacute;vrhu podpůrn&yacute;ch opatřen&iacute; (PO – <em>podpůrná opatření</em>).</p>
+            <p><strong>Nejpouž&iacute;vaněj&scaron;&iacute; metody:</strong></p>
+            <ul>
+                <li>
+                    <p>anamn&eacute;za (rozhovor s rodiči),</p>
+                </li>
+                <li>
+                    <p>pozorov&aacute;n&iacute; (OBS),</p>
+                </li>
+                <li>
+                    <p>rozhovor (ROZ),</p>
+                </li>
+                <li>
+                    <p>anal&yacute;za v&yacute;konů,</p>
+                </li>
+                <li>
+                    <p>anal&yacute;za p&iacute;semn&eacute;ho projevu (APP – <strong>patř&iacute; mezi pedagogick&eacute; diagnostick&eacute; metody</strong>),</p>
+                </li>
+                <li>
+                    <p>testy inteligence (WISC – <em>Wechsler Intelligence Scale for Children</em>),</p>
+                </li>
+                <li>
+                    <p>testy &scaron;koln&iacute; zralosti.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_6"><strong>6) Rozdíl mezi reedukac&iacute; a kompenzac&iacute;. Ucelen&aacute; rehabilitace.</strong></h2>
+            <ul>
+                <li>
+                    <p><strong>Reedukace (RE)</strong> = náprava narušené funkce (např. čten&iacute; u dyslexie).</p>
+                </li>
+                <li>
+                    <p><strong>Kompenzace (KO)</strong> = náhrada funkce pomoc&iacute; jin&eacute; schopnosti nebo pomůcky (např. čten&iacute; textu softwarem).</p>
+                </li>
+            </ul>
+            <p><strong>Ucelená rehabilitace (UR)</strong> = propojen&iacute;:</p>
+            <ul>
+                <li>
+                    <p>l&eacute;čebn&eacute;,</p>
+                </li>
+                <li>
+                    <p>soci&aacute;ln&iacute;,</p>
+                </li>
+                <li>
+                    <p>pedagogick&eacute;,</p>
+                </li>
+                <li>
+                    <p>pracovn&iacute; rehabilitace.</p>
+                </li>
+            </ul>
+            <p>C&iacute;l: maximalizovat schopnosti jedince, zajistit soběstačnost.</p>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_7"><strong>7) Otázky integrace lidí s postižením.</strong></h2>
+            <p>Integrace se t&yacute;k&aacute; přek&aacute;žek:</p>
+            <ul>
+                <li>
+                    <p><strong>materi&aacute;ln&iacute;ch</strong> – bezbari&eacute;rov&eacute; prostřed&iacute;, pomůcky, &uacute;pravy,</p>
+                </li>
+                <li>
+                    <p><strong>technick&yacute;ch</strong> – AT, komunikačn&iacute; zař&iacute;zen&iacute;,</p>
+                </li>
+                <li>
+                    <p><strong>psychick&yacute;ch</strong> – přijet&iacute; vrstevn&iacute;ky, sebevědom&iacute;, motivace,</p>
+                </li>
+                <li>
+                    <p><strong>soci&aacute;ln&iacute;ch</strong> – předsudky, segregace, problematick&aacute; dostupnost služeb.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_8"><strong>8) Speci&aacute;ln&iacute; instituce – př&iacute;klady a charakteristika.</strong></h2>
+            <p>Mezi instituce patř&iacute;:</p>
+            <ul>
+                <li>
+                    <p>SPC (speci&aacute;lně pedagogick&eacute; centrum)</p>
+                </li>
+                <li>
+                    <p>PPP (pedagogicko-psychologick&aacute; poradna)</p>
+                </li>
+                <li>
+                    <p>Ran&aacute; p&eacute;če (RP)</p>
+                </li>
+                <li>
+                    <p>Praktick&eacute; &scaron;koly (P&Scaron;)</p>
+                </li>
+                <li>
+                    <p>Diagnostick&eacute; &uacute;stavy (D&Uacute;)</p>
+                </li>
+                <li>
+                    <p>Stacion&aacute;ře (DS – denn&iacute; stacion&aacute;ř)</p>
+                </li>
+            </ul>
+            <p>U každé: poslání, cílová skupina, metody práce (individuální terapie, nácvik, poradenská práce).</p>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_9"><strong>9) Dětsk&aacute; mozkov&aacute; obrna (DMO) – vznik, formy, pr&aacute;ce.</strong></h2>
+            <p>DMO (dět. mozkov&aacute; obrna) je neprogresivn&iacute; postižen&iacute; mozku vznikl&eacute; v PN/PE/PO obdob&iacute;.</p>
+            <p><strong>Formy:</strong></p>
+            <ul>
+                <li>
+                    <p>spastick&aacute;,</p>
+                </li>
+                <li>
+                    <p>dyskinetick&aacute;,</p>
+                </li>
+                <li>
+                    <p>ataktick&aacute;,</p>
+                </li>
+                <li>
+                    <p>sm&iacute;&scaron;en&aacute;.</p>
+                </li>
+            </ul>
+            <p><strong>Pr&aacute;ce s klientem:</strong></p>
+            <ul>
+                <li>
+                    <p>pravideln&aacute; rehabilitace (Vojtova metoda, Bobath koncept),</p>
+                </li>
+                <li>
+                    <p>n&aacute;cvik soběstačnosti,</p>
+                </li>
+                <li>
+                    <p>&uacute;pravy prostřed&iacute;,</p>
+                </li>
+                <li>
+                    <p>trpěliv&eacute; tempo, kompenzace motorick&yacute;ch obt&iacute;ž&iacute;.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_10"><strong>10) Epilepsie – př&iacute;činy, projevy, pr&aacute;ce.</strong></h2>
+            <p>Př&iacute;činy: genetick&eacute; vlivy, &uacute;razy, infekce CNS, metabolick&eacute; poruchy.</p>
+            <p>Projevy: absence, křečov&eacute; stavy, poruchy vědom&iacute;.</p>
+            <p>Z&aacute;sady pr&aacute;ce:</p>
+            <ul>
+                <li>
+                    <p>klid, neomezov&aacute;n&iacute;, bezpečn&eacute; prostřed&iacute;,</p>
+                </li>
+                <li>
+                    <p>prevence spou&scaron;těčů (stres, blikaj&iacute;c&iacute; světla),</p>
+                </li>
+                <li>
+                    <p>nesahat do &uacute;st při z&aacute;chvatu,</p>
+                </li>
+                <li>
+                    <p>v&eacute;st ž&aacute;ka k sebeř&iacute;zen&iacute;.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_11"><strong>11) Poruchy &scaron;koln&iacute;ch dovednost&iacute; (SPU) + LMD symptomy.</strong></h2>
+            <p><strong>SPU (specifick&eacute; poruchy učen&iacute;):</strong> dyslexie, dysgrafie, dysortografie, dyskalkulie.</p>
+            <p><strong>Př&iacute;činy:</strong> lehk&aacute; mozkov&aacute; dysfunkce (LMD – <em>neurov&yacute;vojov&aacute; odchylka</em>), genetick&eacute; vlivy.</p>
+            <p><strong>Symptomy LMD:</strong></p>
+            <ul>
+                <li>
+                    <p>impulzivita,</p>
+                </li>
+                <li>
+                    <p>nepozornost,</p>
+                </li>
+                <li>
+                    <p>slab&eacute; soustředěn&iacute;,</p>
+                </li>
+                <li>
+                    <p>motorick&aacute; neobratnost.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_12"><strong>12) Nejčastěj&scaron;&iacute; SPU + charakteristika.</strong></h2>
+            <p><strong>Př.: Dyslexie</strong> – specifick&aacute; porucha čten&iacute;, obt&iacute;že v dek&oacute;dov&aacute;n&iacute; textu, pomal&eacute; čten&iacute;, z&aacute;měny hl&aacute;sek.</p>
+            <p><strong>Formy p&eacute;če:</strong></p>
+            <ul>
+                <li>
+                    <p>reedukace,</p>
+                </li>
+                <li>
+                    <p>IVP (individu&aacute;ln&iacute; vzděl&aacute;vac&iacute; pl&aacute;n),</p>
+                </li>
+                <li>
+                    <p>&uacute;prava hodnocen&iacute; (</p>
+                </li>
+                <li>
+                    <p>pr&aacute;ce asistenta pedagoga (AP – <em>asistent pedagoga</em>).</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+            <h2 id="otazka1_13"><strong>13) Sociokulturn&iacute; handicap, &scaron;kola, migranti.</strong></h2>
+            <p>Probl&eacute;my:</p>
+            <ul>
+                <li>
+                    <p>jazykov&aacute; bari&eacute;ra,</p>
+                </li>
+                <li>
+                    <p>nedostatek podnětů,</p>
+                </li>
+                <li>
+                    <p>jin&eacute; kulturn&iacute; normy,</p>
+                </li>
+                <li>
+                    <p>riziko soci&aacute;ln&iacute; exkluze.</p>
+                </li>
+            </ul>
+            <p>&Scaron;kola by měla využ&iacute;vat:</p>
+            <ul>
+                <li>
+                    <p>interkulturn&iacute; v&yacute;chovu,</p>
+                </li>
+                <li>
+                    <p>asistenta pro ž&aacute;ky s odli&scaron;n&yacute;m mateřsk&yacute;m jazykem (OMJ),</p>
+                </li>
+                <li>
+                    <p>podporu rodiny.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh1" class="back-to-top">Zpět na seznam otázek 1. okruhu</a>
+            <hr>
+
+            <h1><strong>2. OTÁZKY KE ZKOUŠCE Z PSYCHOPEDIE A ETOPEDIE</strong></h1>
+            <hr>
+            <h2 id="otazka2_1"><strong>1) Mentální retardace, vymezení pojmu, klasifikace, hodnocení (kvalitativní a kvantitativni). V čem spočívá základní rozdíl mezi mentální. retardaci a demencí?</strong></h2>
+            <ul>
+                <li>
+                    <p><strong>Mentální retardace (MR)</strong> je trvalé (statické) postižení, které vzniká v průběhu vývoje (od početí do 18. roku) a zahrnuje omezení jak v rozumových schopnostech, tak v adaptivním chování.</p>
+                </li>
+                <li>
+                    <p><strong>Demence</strong> je získané (dynamické, progresivní) postižení, které nastává později v životě v důsledku nemoci nebo úrazu a vede k úbytku dříve nabytých intelektových schopností.</p>
+                </li>
+            </ul>
+            <p><strong>Klasifikace MR (podle IQ):</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Lehká MR (IQ 50–69)</strong>: Schopnost učit se základním školním dovednostem. V dospělosti plně soběstačný, potřebuje spíše sociální podporu.</p>
+                </li>
+                <li>
+                    <p><strong>Střední MR (IQ 35–49)</strong>: Učí se základním dovednostem. Potřebuje stálý dohled, ale zvládá jednoduchou manuální práci.</p>
+                </li>
+                <li>
+                    <p><strong>Těžká MR (IQ 20–34)</strong>: Velmi omezené komunikační a pohybové schopnosti. Potřebuje trvalou péči.</p>
+                </li>
+                <li>
+                    <p><strong>Hluboká MR (IQ pod 20)</strong>: Minimální, resp. žádné schopnosti v komunikaci a motorice. Vyžaduje nepřetržitou péči.</p>
+                </li>
+            </ul>
+            <p><strong>Hodnocení:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Kvantitativní</strong>: Stanovení IQ pomocí standardizovaných testů (např. Wechslerovy škály), určuje stupeň MR.</p>
+                </li>
+                <li>
+                    <p><strong>Kvalitativní (klinicko-psychologické)</strong>: Popisuje **strukturu** osobnosti, adaptivní chování, silné a slabé stránky jedince. Důležité pro tvorbu IVP.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_2"><strong>2) Jaké příčiny mohou vést k defektu rozumových schopností a rozvoji mentální retardace?</strong></h2>
+            <p>Příčiny MR jsou děleny dle období vzniku (viz otázka 1.4):</p>
+            <ol>
+                <li>
+                    <p><strong>Prenatální (před narozením) – nejčastější:</strong></p>
+                    <ul>
+                        <li>
+                            <p><strong>Genetické/chromozomální vady</strong>: Downův syndrom, syndrom X křehkého chromozomu.</p>
+                        </li>
+                        <li>
+                            <p><strong>Metabolické poruchy</strong>: Fenylketonurie (PKU).</p>
+                        </li>
+                        <li>
+                            <p><strong>Infekce matky</strong>: Zarděnky, toxoplazmóza, HIV.</p>
+                        </li>
+                        <li>
+                            <p><strong>Teratogeny</strong>: Alkohol a drogy (FAS), některé léky, kouření, radiace.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Perinatální (při porodu):</strong></p>
+                    <ul>
+                        <li>
+                            <p><strong>Hypoxie</strong>: Nedostatek kyslíku v důsledku komplikovaného porodu, udušení pupečníkem.</p>
+                        </li>
+                        <li>
+                            <p><strong>Předčasný porod</strong>: Nízká porodní hmotnost, nezralost mozku.</p>
+                        </li>
+                        <li>
+                            <p><strong>Mechanické poškození mozku</strong> při komplikovaném porodu.</p>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <p><strong>Postnatální (po narození) – do 18. roku:</strong></p>
+                    <ul>
+                        <li>
+                            <p><strong>Úrazy hlavy</strong>: Autonehody, pády, syndrom třeseného dítěte.</p>
+                        </li>
+                        <li>
+                            <p><strong>Infekce CNS</strong>: Meningitida (zánět mozkových blan), encefalitida (zánět mozku).</p>
+                        </li>
+                        <li>
+                            <p><strong>Psychosociální deprivace</strong>: Extrémní zanedbávání v raném věku, nedostatek podnětů a lásky.</p>
+                        </li>
+                    </ul>
+                </li>
+            </ol>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_3"><strong>3) Jaký je význam kvalitativního hodnocení rozumových schopností pro práci s lidmi s mentálním postižením?</strong></h2>
+            <p>Zatímco **kvantitativní hodnocení (IQ)** nám řekne *stupeň* postižení, **kvalitativní hodnocení** je nezbytné pro *plánování a realizaci* speciálně pedagogické podpory.</p>
+            <p><strong>Hlavní význam:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Tvorba IVP:</strong> Kvalitativní diagnostika (např. posouzení adaptivního chování, sebepéče, sociálních dovedností) je základem pro stanovení reálných cílů a metod v Individuálním vzdělávacím plánu (IVP).</p>
+                </li>
+                <li>
+                    <p><strong>Identifikace silných stránek:</strong> Odhaluje potenciál a rezervy v rozvoji (např. silnou vizuální paměť, motorické dovednosti), které lze využít k **vyrovnávání** nedostatků v kognitivní oblasti.</p>
+                </li>
+                <li>
+                    <p><strong>Volba didaktických metod:</strong> Ukazuje, jak žák myslí (konkrétně, pomalu, s chybami v generalizaci) a jaký způsob výuky potřebuje (vizualizace, strukturalizace, repetice, názornost).</p>
+                </li>
+                <li>
+                    <p><strong>Sociální a emoční potřeby:</strong> Hodnotí emoční vývoj, motivaci a sociální interakce, které jsou pro úspěšnou integraci klíčové.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_4"><strong>4) Charakterizujte možnosti edukace a následné společenské uplatnění jedinců s postižením na úrovni středně těžké mentální retardace.</strong></h2>
+            <p>Jedinci se **středně těžkou MR (IQ 35–49)** potřebují během celého života stálou podporu, ale jejich rozvoj je možný, pokud je výuka **silně strukturovaná** a **orientovaná na praktické dovednosti**.</p>
+            <p><strong>Možnosti edukace:</strong></p>
+            <ul>
+                <li>
+                    <p>**Škola:** Speciální školy (ZŠ speciální, PŠ – Praktická škola), kde je výuka zaměřena na:
+                        <ul>
+                            <li>Funkční čtení, psaní a počítání (základní peněžní operace, rozpoznání dopravních značek, psaní jména).</li>
+                            <li>Nácvik **praktických dovedností** (hygiena, oblékání, vaření, používání veřejné dopravy).</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p>**Metody:** Dominantní je **názornost**, **repetice**, **analyticko-syntetická metoda** (rozklad složité činnosti na jednoduché kroky), a **strukturované učení** (jistota, opakování rituálů).</p>
+                </li>
+            </ul>
+            <p><strong>Společenské uplatnění:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Pracovní uplatnění:</strong> Většinou pouze v rámci **chráněných dílen** nebo chráněného trhu práce, kde vykonávají jednoduchou, stereotypní a manuální práci (montáž, balení, úklid) pod stálým dohledem.</p>
+                </li>
+                <li>
+                    <p><strong>Bydlení a sociální život:</strong>
+                        <ul>
+                            <li>Většinou žijí v rodině nebo ve **chráněném/podporovaném bydlení** (domovy pro osoby se zdravotním postižením).</li>
+                            <li>Potřebují trvalou podporu v rozhodování, hospodaření s penězi a sociálních interakcích.</li>
+                        </ul>
+                    </p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_5"><strong>5) Charakterizujte typické znaky myšleni a řeči lidí s mentálním postižením. Jaké nápadnosti se objevují v jejich chování, jaká je jejich příčina ?</strong></h2>
+            <p>Charakteristiky se liší dle stupně MR, ale obecně platí následující:</p>
+            <p><strong>Znaky myšlení (Kognice):</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Konkrétnost myšlení:</strong> Neschopnost abstrakce, ulpívání na konkrétních faktech a předmětech. Je pro ně obtížné pochopit metafory, přísloví nebo abstraktní pojmy (čas, spravedlnost).</p>
+                </li>
+                <li>
+                    <p><strong>Pomalé tempo:</strong> Nižší rychlost zpracování informací a pomalejší učení. Vyžadují více času na pochopení úkolu.</p>
+                </li>
+                <li>
+                    <p><strong>Narušená generalizace:</strong> Obtížné přenášení naučených poznatků a dovedností do nových situací (co se naučí ve škole, neumí aplikovat doma).</p>
+                </li>
+                <li>
+                    <p><strong>Narušená paměť:</strong> Především snížená mechanická (krátkodobá) paměť, ale často dobrá paměť vizuální.</p>
+                </li>
+            </ul>
+            <p><strong>Znaky řeči (Komunikace):</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Omezená slovní zásoba:</strong> Složitá syntaxe a gramatika bývají narušené, řeč je často agramatická.</p>
+                </li>
+                <li>
+                    <p><strong>Dyzartrie/Dyslalie:</strong> Časté poruchy výslovnosti a artikulace (u těžších forem).</p>
+                </li>
+                <li>
+                    <p><strong>Echolalie:</strong> Opakování slyšených slov nebo frází bez pochopení obsahu (časté u Downova syndromu nebo PAS s MR).</p>
+                </li>
+            </ul>
+            <p><strong>Nápadnosti v chování a jejich příčina:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Emoční labilita a neadekvátní reakce:</strong> Neschopnost přiměřeně kontrolovat emoce. **Příčina:** Nižší emoční inteligence a nedostatečná kontrola vyšších korových center.</p>
+                </li>
+                <li>
+                    <p><strong>Sugestibilita a naivita:</strong> Snadné ovlivnění okolím, neschopnost kriticky zhodnotit riziko nebo úmysl druhých. **Příčina:** Nízká úroveň sociální inteligence a kritického myšlení.</p>
+                </li>
+                <li>
+                    <p><strong>Stereotypní chování:</strong> Opakující se pohyby nebo rituály (zejména u těžší MR). **Příčina:** Sebestimulace a způsob, jak zvládat stres nebo nadměrné podněty v prostředí.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_6"><strong>6) Jaké jsou složky a formy výchovné práce, realizované v rámci ústavní péče, jaký je jejich cíl?</strong></h2>
+            <p>Ústavní péče (v diagnostických ústavech, dětských domovech, výchovných ústavech) slouží primárně k **resocializaci** a **stabilizaci** jedinců s poruchami chování nebo s rodinnou deprivací. Cílem je **znovu začlenit** jedince do společnosti a zabránit recidivě. (Spadá spíše pod etopedii.)</p>
+            <p><strong>Složky výchovné práce:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Terapeutická složka:</strong> Zaměřena na **korekci narušených vztahů** a emocionálních problémů. Zahrnuje individuální a skupinovou psychoterapii, arteterapii, dramaterapii.</p>
+                </li>
+                <li>
+                    <p><strong>Edukativní složka:</strong> Směřuje k **doplnění zanedbaného vzdělání** (často žáci s velkým počtem zameškaných hodin) a rozvoji školních dovedností.</p>
+                </li>
+                <li>
+                    <p><strong>Pracovně-výchovná složka:</strong> Zaměřena na **získání pracovních návyků** a dovedností, přípravu na budoucí profesní uplatnění. Zahrnuje nácvik úklidu, péče o majetek, jednoduché manuální práce.</p>
+                </li>
+                <li>
+                    <p><strong>Režimová složka:</strong> Zahrnuje **přísné dodržování pravidel** a denního režimu. Učí jedince struktuře, zodpovědnosti, respektování autorit a limitů. Je klíčová pro stabilizaci chování.</p>
+                </li>
+            </ul>
+            <p><strong>Formy výchovné práce:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Individuální práce:</strong> Systematický rozhovor, individuální výchovný plán, poradenství.</p>
+                </li>
+                <li>
+                    <p><strong>Skupinová práce:</strong> Terapeutické skupiny, volnočasové aktivity, komunitní schůze (řešení problémů v rámci skupiny).</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_7"><strong>7) Jaká jsou specifika práce s jedinci s Downovým syndromem. Možnosti výchovy a vzdělávání. Typické odlišnosti těchto osob ?</strong></h2>
+            <p>Downův syndrom (DS) je nejčastější vrozená chromozomální vada (trizomie 21), která vede k různým stupňům mentální retardace (nejčastěji lehká až střední).</p>
+            <p><strong>Typické odlišnosti (Klinické a psychické):</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Vzhled:</strong> Typický obličej (šikmé oči, plochý nosní můstek), malá postava, krátký krk, velký jazyk (často trčící z úst).</p>
+                </li>
+                <li>
+                    <p><strong>Kognice:</strong> Myšlení je pomalé a konkrétní. Silná je **vizuální paměť** a sociální vnímavost, slabá je **sluchová paměť** a řečové dovednosti.</p>
+                </li>
+                <li>
+                    <p><strong>Chování:</strong> Jsou obvykle **sociální, přátelští, a empatičtí**. Mohou projevovat tvrdohlavost, ale obecně mají rádi řád a rutinu.</p>
+                </li>
+                <li>
+                    <p><strong>Zdraví:</strong> Časté srdeční vady, problémy se zrakem a sluchem, snížená imunita.</p>
+                </li>
+            </ul>
+            <p><strong>Specifika práce a edukace:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Využití vizuální podpory:</strong> Vzhledem k silné vizuální paměti se maximálně využívají piktogramy, obrázky, fotografie a znaky.</p>
+                </li>
+                <li>
+                    <p><strong>Raná stimulace:</strong> Logopedická péče je nutná kvůli svalové hypotonii ústní dutiny. Často je nutné se zaměřit na **alternativní komunikaci** (znaky, gesta).</p>
+                </li>
+                <li>
+                    <p><strong>Nácvik sebepéče:</strong> Zaměřeno na maximální soběstačnost, nácvik hygieny, stravování, jednoduchých domácích prací (často s podporou asistenta pedagoga/osobního asistenta).</p>
+                </li>
+                <li>
+                    <p>**Vzdělávání:** Vzděláváni jsou buď v ZŠ speciální, nebo integrovaně s výraznou podporou (IVP, AP) a zaměřením na praktické dovednosti.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_8"><strong>8) Autismus a jeho formy (syndromy) etiologie, prevalence v populaci. Obecná charakteristika platná pro všechny jednotlivé syndromy. Jaké jsou principy práce se žáky s toto poruchou? Charakterizujte metodu strukturovaného přístupu</strong></h2>
+            <p>Autismus (Porucha autistického spektra – PAS) je neurovývojová porucha, která ovlivňuje způsob, jakým jedinec zpracovává informace, komunikuje a navazuje sociální interakce.</p>
+            <p><strong>Formy (Syndromy):</strong> Dnes se používá termín **Spektrum**, ale historicky to byly: Dětský autismus, Aspergerův syndrom (mírnější forma, vyšší inteligence), Atypický autismus.</p>
+            <p><strong>Etiologie a Prevalence:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Etiologie:</strong> Převážně **neurobiologická** a **genetická**. Vliv prostředí je sekundární. Nejedná se o psychologický problém způsobený výchovou.</p>
+                </li>
+                <li>
+                    <p><strong>Prevalence:</strong> Odhaduje se cca **1–2 %** populace, častější u chlapců (poměr cca 4:1).</p>
+                </li>
+            </ul>
+            <p><strong>Obecná charakteristika (Triáda/Diáda narušení):</strong></p>
+            <p>Narušení se dříve dělilo do tří oblastí (triáda), dnes se užívá **diáda narušení**:</p>
+            <ol>
+                <li>
+                    <p><strong>Narušení sociální interakce a komunikace:</strong> Obtížné navazování vztahů, nezájem o sociální interakci, nepochopení řeči těla, obtíže s reciprocitou (střídání rolí) v rozhovoru.</p>
+                </li>
+                <li>
+                    <p><strong>Opakující se, stereotypní vzorce chování a zájmů:</strong> Neobvyklé, intenzivní a omezené zájmy (často úzké téma), lpění na rutině a rituálech, opakující se pohyby (mávání rukama, houpání).</p>
+                </li>
+            </ol>
+            <p><strong>Principy práce se žáky s PAS:</strong></p>
+            <ul>
+                <li>
+                    <p>**Bezpečnost a předvídatelnost:** Klíčové je strukturované a předvídatelné prostředí.</p>
+                </li>
+                <li>
+                    <p>**Vizuální podpora:** Používání piktogramů, vizuálních rozvrhů a sociálních příběhů.</p>
+                </li>
+                <li>
+                    <p>**Jednoznačnost:** Vyhýbat se ironii, dvojsmyslům a abstraktním pokynům. Přímá, doslovná komunikace.</p>
+                </li>
+            </ul>
+            <p><strong>Metoda strukturovaného přístupu (TEACCH):</strong></p>
+            <p>Jde o nejrozšířenější komplexní metodu práce s lidmi s autismem. Cílem je uspořádat prostředí tak, aby bylo pro autistu **předvídatelné, srozumitelné a smysluplné**.</p>
+            <ul>
+                <li>
+                    <p>**Individualizace:** Přizpůsobení úkolů a prostředí individuálním potřebám.</p>
+                </li>
+                <li>
+                    <p>**Vizuální struktura:** Používání vizuálního denního režimu, pracovní schémata (co dělat, jak dlouho, co následuje).</p>
+                </li>
+                <li>
+                    <p>**Fyzická struktura:** Vymezení zón pro práci, odpočinek a jídlo.</p>
+                </li>
+                <li>
+                    <p>**Struktura úkolů:** Úkoly jsou jasně vizuálně ohraničené a mají jasný začátek, průběh a konec.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_9"><strong>9) Definujte poruchy chování a uveďte obecné znaky jejich nositelů.</strong></h2>
+            <p><strong>Definice:</strong> Poruchy chování (PCH) jsou trvalé, opakované a hrubé narušení sociálních norem, které zahrnuje agresivní, asociální, kriminální nebo opoziční chování, které významně přesahuje běžné chování dětí a dospívajících.</p>
+            <p><strong>Obecné znaky nositelů PCH:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Narušené vztahy:</strong> Konflikty s autoritami (rodiče, učitelé) a vrstevníky. Neschopnost udržet stabilní, hluboké přátelství.</p>
+                </li>
+                <li>
+                    <p><strong>Nízká frustrační tolerance:</strong> Snadná excitabilita, tendence reagovat hněvem a agresí na drobnou zátěž.</p>
+                </li>
+                <li>
+                    <p><strong>Nedostatek výčitek:</strong> Narušený vývoj svědomí, absence pocitu viny po spáchaném přestupku či činu.</p>
+                </li>
+                <li>
+                    <p><strong>Impulzivita:</strong> Sklon jednat bez rozmyšlení a bez ohledu na následky.</p>
+                </li>
+                <li>
+                    <p><strong>Asociální tendence:</strong> Zahrnuje lhaní, krádeže, útěky z domova, záškoláctví, vandalismus, šikanu.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_10"><strong>10) Jaké faktory mohou zvyšovat pravděpodobnost vzniku a rozvoje poruch chování</strong></h2>
+            <p>PCH jsou téměř vždy výsledkem **multifaktoriální etiopatogeneze**, kde se prolínají biologické, psychologické a sociální vlivy.</p>
+            <p><strong>Faktory:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Biologické/Dispoziční:</strong>
+                        <ul>
+                            <li>Dědičnost, temperament (zvýšená dráždivost, neklid).</li>
+                            <li>Neurobiologické faktory (poškození prefrontální kůry, ADHD).</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Psychologické:</strong>
+                        <ul>
+                            <li>Nízká frustrační tolerance, impulzivita (zejména u ADHD).</li>
+                            <li>Oslabení sebereflexe a sebehodnocení.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Sociální/Rodinné (nejvýznamnější):</strong>
+                        <ul>
+                            <li>**Narušená rodinná struktura:** Neúplná rodina, rozvod, časté konflikty.</li>
+                            <li>**Výchovné chyby:** Nedůsledná, příliš autoritativní nebo naopak zanedbávající výchova.</li>
+                            <li>**Modelování chování:** Agresivní chování rodičů, alkoholismus, kriminální minulost rodinných příslušníků.</li>
+                            <li>**Nízký socioekonomický status (SES).**</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Školní:</strong> Neúspěchy ve škole, častá změna školy, šikana, konflikty s učiteli, nezvládnutá integrace.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_11"><strong>11) Jak lze třídit poruchy chování z hlediska závažnosti pro společnost? Charakterizujte analogické znaky jednotlivých kategorií.</strong></h2>
+            <p>Nejčastější je dělení na základě **závažnosti narušení sociálních norem** a **prostředí**, ve kterém se projevuje:</p>
+            <ol>
+                <li>
+                    <p><strong>Problémové chování (Mírné PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Přechodné, situačně podmíněné problémy. Není trvalé.
+                            <li>**Příklady:** Přechodné vzdorovité chování v pubertě, občasné lhaní, náladovost.
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Disociální chování (Středně závažné PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Porušování norem bez výrazného poškozování ostatních. Chování je zaměřeno spíše proti **sobě** nebo **pravidlům**.
+                            <li>**Příklady:** Záškoláctví, útěky z domova, toulání, neadekvátní sexuální chování, sebepoškozování, užívání látek.
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Asociální chování (Závažné PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Aktivní a trvalé porušování norem, chování zaměřené **proti společnosti, majetku nebo osobám**.
+                            <li>**Příklady:** Fyzická a verbální agrese, šikana, vandalismus, krádeže, ničení majetku, týrání zvířat.
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Asoociální chování (Nejzávažnější PCH):</strong>
+                        <ul>
+                            <li>**Znaky:** Jedinec je izolovaný, žije ve vlastním světě a je lhostejný vůči sociálním normám. Nejedná se nutně o agresi, ale o **sociální nepřizpůsobivost**.
+                            <li>**Příklady:** Extrémní psychická deprivace, závažné formy autismu (pokud není chování adekvátně kompenzováno).</p>
+                        </ul>
+                    </li>
+            </ol>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_12"><strong>12) Definujte syndrom závislosti, popište její symptomy. Jaký je rozdíl mezi škodlivým užíváním a závislostí?</strong></h2>
+            <p><strong>Syndrom závislosti (Definice):</strong> Jde o skupinu fyziologických, behaviorálních a kognitivních jevů, u nichž užívání psychoaktivní látky (nebo třídy látek) či určité aktivity (hazard, internet) nabývá pro jedince **vyšší priority** než jiné chování, které mělo dříve vyšší hodnotu.</p>
+            <p><strong>Klíčové symptomy (dle MKN-10/DSM):</strong></p>
+            <ul>
+                <li>
+                    <p>**Silná touha (craving):** Přetrvávající nutkání látku užívat.</p>
+                </li>
+                <li>
+                    <p>**Ztráta kontroly:** Neschopnost kontrolovat množství užívané látky nebo délku užívání.</p>
+                </li>
+                <li>
+                    <p>**Zvyšování tolerance:** Pro dosažení stejného účinku je potřeba vyšší dávka látky.</p>
+                </li>
+                <li>
+                    <p>**Odvykací stav:** Vyskytuje se po vysazení látky (fyzické nebo psychické nepříjemné stavy).</p>
+                </li>
+                <li>
+                    <p>**Zanedbávání zájmů:** Postupné opouštění jiných zájmů a aktivit ve prospěch užívání.</p>
+                </li>
+                <li>
+                    <p>**Pokračující užívání přes jasné škodlivé následky.**</p>
+                </li>
+            </ul>
+            <p><strong>Rozdíl mezi Škodlivým užíváním a Závislostí:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Škodlivé užívání:</strong> Užívání látky, které již prokazatelně poškozuje zdraví (fyzické nebo psychické), ale jedinec **ještě nevykazuje syndrom závislosti** (nemá ztrátu kontroly, toleranci ani odvykací stav).</p>
+                </li>
+                <li>
+                    <p><strong>Závislost:</strong> Jedinec splňuje alespoň **3 ze 6** uvedených symptomů (viz výše). Užívání se stává **centrem života** a je nutkavé.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_13"><strong>13) Jaké psychologické a sociální faktory mohou zvyšovat pravděpodobnost rozvoje závislosti?</strong></h2>
+            <p>Stejně jako PCH, i závislost je multi-příčinná. Existuje souhra faktorů rizika (zvyšují pravděpodobnost) a faktorů protektivních (snižují pravděpodobnost).</p>
+            <p><strong>Psychologické faktory (Vnitřní):</strong></p>
+            <ul>
+                <li>
+                    <p>**Nízké sebevědomí a frustrace:** Užívání látky slouží jako únik nebo způsob, jak kompenzovat pocity méněcennosti.</p>
+                </li>
+                <li>
+                    <p>**Osobnostní rysy:** Impulzivita, sklony k riskování, vyhledávání vzrušení.</p>
+                </li>
+                <li>
+                    <p>**Psychické problémy:** Nedostatečně léčené duševní poruchy (deprese, úzkosti, ADHD), kde látka slouží k "samoléčbě".</p>
+                </li>
+                <li>
+                    <p>**Neschopnost vyrovnat se se stresem.**</p>
+                </li>
+            </ul>
+            <p><strong>Sociální faktory (Vnější):</strong></p>
+            <ul>
+                <li>
+                    <p>**Rodinné prostředí:** Špatné rodinné zázemí, rozvod, násilí, závislost jednoho z rodičů (modelování chování). Nejvýznamnější faktor.</p>
+                </li>
+                <li>
+                    <p>**Vrstevníci:** Příslušnost k partě, kde je užívání návykových látek normou. Velký vliv v adolescenci.</p>
+                </li>
+                <li>
+                    <p>**Školní neúspěch:** Opakované neúspěchy, neúspěšné začlenění do kolektivu.</p>
+                </li>
+                <li>
+                    <p>**Dostupnost látky:** Snadná dostupnost drog nebo alkoholu v lokalitě.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+            <hr>
+            <h2 id="otazka2_14"><strong>14) Definujte delikventy. Vymezte nejdůležitější biologické a sociální faktory, které zvyšují pravděpodobnost vzniku a rozvoje kriminálního chování.</strong></h2>
+            <p><strong>Delikvent (Definice):</strong> Z pohledu etopedie je delikvent jedinec, který se dopustil činu, který je v rozporu se zákonem (přestupek, trestný čin). U dětí a mladistvých se hovoří o **juvenilní delikvenci**.</p>
+            <p><strong>Faktory zvyšující kriminální chování:</strong></p>
+            <ul>
+                <li>
+                    <p><strong>Biologické faktory:</strong>
+                        <ul>
+                            <li>**Temperament a impulzivita:** Výrazná dráždivost, neklid, neschopnost odložit odměnu (často spojeno s ADHD).</li>
+                            <li>**Neurobiologické faktory:** Poškození mozku, které ovlivňuje kontrolu agresivity.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Sociální/Rodinné faktory (Klíčové):</strong>
+                        <ul>
+                            <li>**Rodinná patologie:** Násilí, rozpad rodiny, zanedbání, nízký SES.</li>
+                            <li>**Negativní modely:** Rodič s kriminální minulostí, užívání drog a alkoholu v rodině.</li>
+                            <li>**Absence limitů:** Neefektivní rodičovská kontrola, nedůsledná výchova.</li>
+                        </ul>
+                    </p>
+                </li>
+                <li>
+                    <p><strong>Školní faktory:</strong> Záškoláctví, opakovaný školní neúspěch, předčasné ukončení vzdělávání, sociální exkluze (šikana).</p>
+                </li>
+                <li>
+                    <p><strong>Vrstevnické faktory:</strong> Přidání se ke kriminální nebo deviantní partě, která poskytuje model chování, zázemí a přijetí.</p>
+                </li>
+            </ul>
+            <a href="#otazky_okruh2" class="back-to-top">Zpět na seznam otázek 2. okruhu</a>
+        </div>
+    </div>
+
+</body>
+</html>
