@@ -62,3 +62,35 @@
 
 ---
 
+## Praktický manuál pro pedagogy: Postup při řešení rizikových situací
+
+Tento návod slouží jako závazný postup pro učitele a výchovné pracovníky při zjištění ohrožení dítěte (záškoláctví, šikana, domácí násilí, týrání).
+
+### 1. Krok: Detekce a okamžitá reakce
+* **Identifikace:** Změna chování, neomluvené absence, somatické známky (modřiny, strach), pasivita.
+* **Povinnost:** Máš-li podezření na ohrožení dítěte (CAN syndrom), máš ze zákona **oznamovací povinnost**.
+* **První pomoc:** * U šikany: Okamžitě oddělit oběť od agresora a zajistit bezpečí.
+    * U násilí: Pokud je dítě v bezprostředním ohrožení, volat policii (158).
+    * Dokumentace: Vše si piš do osobní složky žáka nebo pedagogického deníku (datum, čas, popis chování).
+
+### 2. Krok: Interní řešení (Škola)
+* **ŠPP:** Svolat konzultaci (třídní učitel, výchovný poradce, školní metodik prevence).
+* **Dokumentace:** Zapsat průběh jednání.
+* **Pravidlo:** U šikany **nikdy neřešit konfrontací** (nebrat agresora a oběť k jednomu stolu).
+
+### 3. Krok: Externí spolupráce (Úřady a odborníci)
+* **OSPOD (kurátor):** Kontaktuj kurátora pro mládež na příslušném úřadě (ORP). Je to tvůj hlavní partner při řešení zanedbávání nebo týrání.
+* **Policie ČR:** Vykázání násilníka ze společného obydlí (platí 10 dní).
+* **SVP (Středisko výchovné péče):** Pokud si škola neví rady s kolektivem nebo výchovným problémem, volej SVP – přijedou přímo do školy.
+
+### 4. Krok: Procesní postup (Lhůty a legislativa)
+1. **Záškoláctví:** Při neomluvené absenci (obvykle nad 10 hodin) škola **musí** podat podnět na OSPOD.
+2. **Šetření OSPOD:** Kurátor má 30 dní na šetření v rodině.
+3. **Krizové řešení (Předběžné opatření):** Pokud je dítě v přímém ohrožení, soud musí o umístění do bezpečí rozhodnout do **24 hodin**.
+4. **Diagnostika v DÚ:** Pokud je dítě odebráno z rodiny, pobyt v Diagnostickém ústavu trvá **max. 8 týdnů**, poté následuje přesun do DD nebo VÚ.
+
+### 5. Zlatá pravidla pro pedagogy
+* **Dokumentuj vše:** Vše, co není zapsáno, jako by se nestalo. V případě právního sporu tě kryje jen tvoje dokumentace.
+* **Nepřekračuj kompetence:** Ty nejsi terapeut ani sociální pracovník. Tvoje role je **identifikovat, zajistit bezpečí a nahlásit**.
+* **Spolupracuj:** Školní metodik prevence (ŠMP) je tvůj spojenecký expert na legislativu – konzultuj s ním každý krok.
+* **Zůstaň v klidu:** S dítětem jednej klidně, bez obviňování, pouze naslouchej.
